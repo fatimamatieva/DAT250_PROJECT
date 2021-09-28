@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Reservation{% endblock %}</h1>
+
+{% endblock %}
+
+
+{% block head %}
+    <script type=text/javascript src="{{url_for('static', filename='../../static/booking.js') }}"></script>
+{% endblock %}
+
+
+{% block content %}
+
+<form method="get">
+  <label for="selectedDate" >Date</label>
+  <input type="date" id="selectedDate">
+
+  <label for="selectedTime" >Time</label>
+  <select name="time" id="selectedTime">
+    <option value="1">08:00 - 10:00</option>
+    <option value="2">10:00 - 12:00</option>
+    <option value="3">12:00 - 14:00</option>
+  </select>
+
+  <input type="submit" value="Show Avaliable Rooms">
+
+</form>
+<hr>
+<p class="flash">
+  Description about booking: maximum booking days..
+</p>
+
+{% for room in rooms %}
+
+    <article class="post">
+        <header>
+            <div>
+            <h1>room['Name']</h1>
+            <div class="about"> room['Number']</div>
+            </div>
+            {% if g.user %}
+                <button id="KE-404" class="btnBooking" onclick="setModalContent(this)">Book Room</button>
+            {% endif %}
+            
+        </header>
+    </article>
+
+  {% if not loop.last %}
+    <hr>
+  {% endif %}
+
+{% endfor %}
+
+<!-- <article class="post">
+  <header>
+    <div>
+      
+      <h1>KE-202</h1>
+      <div class="about">21.09.2021</div>
+    </div>
+      <button id="KE-202" class="btnBooking" onclick="setModalContent(this)">Book Room</button>
+
+    
+  </header>
+
+</article>
+
+  <hr>
+
+  <article class="post">
+    <header>
+      <div>
+        <h1>KE-404</h1>
+        <div class="about"> 21.09.2021</div>
+      </div>
+
+      <button id="KE-404" class="btnBooking" onclick="setModalContent(this)">Book Room</button>
+    
+    </header>
+  </article>
+  
+    <hr> -->
+
+<!-- The Modal -->
+<div id="mdlBooking" class="modal">
+
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Confirm Booking</h2>
+      <span class="close">&times;</span>
+    </div>
+    <form method="get">
+      <label for="room" >Room</label>
+      <input name="room" id="room" disabled>
+
+  
+      <label for="mdlDate" >Date</label>
+      <input type="date" name="date" id="mdlDate" disabled>
+    
+      <label for="mdlTime" >Time</label>
+      <select name="time" id="mdlTime" disabled>
+        <option value="1">08:00 - 10:00</option>
+        <option value="2">10:00 - 12:00</option>
+        <option value="3">12:00 - 14:00</option>
+      </select>
+    
+
+      <label for="comments">Additional Comments</label>
+      <textarea id="comments"></textarea>
+      <input type="submit" value="Confirm Booking" style="margin-left: auto;">
+    </form>
+    
+  </div>
+
+</div>
+
+{% endblock %}
