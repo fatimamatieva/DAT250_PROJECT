@@ -60,6 +60,9 @@
    
   }
 
+  nav ul li:first-child {
+    margin-right: auto;
+  }
   nav ul li a, nav ul li span, header .action {
     display: block;
     padding: 0.5rem;
@@ -88,27 +91,27 @@
   }
 
 
-  .post > header {
+  .room > header {
     display: flex;
     align-items: flex-end;
     font-size: 0.85em;
   }
 
-  .post > header > div:first-of-type {
+  .room > header > div:first-of-type {
     flex: auto;
   }
 
-  .post > header h1 {
+  .room > header h1 {
     font-size: 1.5em;
     margin-bottom: 0;
   }
 
-  .post .about {
+  .room .date {
     color: slategray;
     font-style: italic;
   }
 
-  .post .body {
+  .room .body {
     white-space: pre-line;
   }
 
@@ -137,7 +140,7 @@
     color: #cc2f2e;
   }
 
-  input[type=submit] {
+  input[type=submit]{
     align-self: start;
     min-width: 10em;
   }
@@ -156,6 +159,11 @@
   }
 
 
-  input[type="submit"], button{
+  input[type="submit"], button, .btn-link{
     cursor: pointer !important;
   }
+  
+.btn-group{
+  display: flex;
+  justify-content: space-between;
+}
