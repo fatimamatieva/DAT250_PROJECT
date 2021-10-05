@@ -26,12 +26,12 @@ def confirm():
         room = request.form['room']
         date = request.form['date']
         time = request.form['time']
-        comments = request.form['time']
+        comments = request.form['comments']
         db = get_db()
         db.execute(
-            'INSERT INTO room (RoomName, Date, Time, Comments, UserID)'
-            ' VALUES (?, ?, ?, ?)',
-            (room, date, time, comments, g.user['id'])
+            'INSERT INTO room_time (room_id, from_time, to_time, Comments, user_id)'
+            ' VALUES (?, ?, ?, ?, ?)',
+            (date, room, time, comments, g.user['id'])
         )
         db.commit()
         flash("Booking successful")
@@ -59,8 +59,8 @@ def get_rooms(date, time):
  #       (date,time,)
  #   ).fetchone()
 
-    from_hours = time[0:5] + ':00'
-    to_hours = time[8:] + ':00'
+    from_hours = time + ':00:00'
+    to_hours = str(int(time)+2) + ':00:00'
     from_time = date + ' ' + from_hours
     to_time = date + ' ' + to_hours
 
@@ -71,8 +71,9 @@ def get_rooms(date, time):
 
     rooms = db.execute(
     'SELECT id, room_number from room r'
-    ' where not exist(SELECT * FROM room_time where room_id = r.id' 
-    ' and from_time < ? and to_time > ?)',(date_time_from, date_time_to)).fetchall()
+    ' where not exists(SELECT * FROM room_time where room_id = r.id' 
+    ' and from_time < ? and to_time > ?)'
+    ' ORDER BY room_number',(date_time_from, date_time_to)).fetchall()
 
     if rooms is None:
         abort(404)
