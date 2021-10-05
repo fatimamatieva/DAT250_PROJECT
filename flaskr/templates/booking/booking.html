@@ -52,7 +52,38 @@
   {% endif %}
 
 {% endfor %}
+<!-- 
+<article class="room">
+  <header>
+    <div>
+      
+      <h1>KE-202</h1>
+      <div class="date">21.09.2021</div>
+    </div>
+    <a class="btn" value="Back" href="{{url_for('booking.confirm')}}">
+      <input  class="btn-link" type="button" value="Book Room">
+    </a>
 
+    
+  </header>
+
+</article>
+
+  <hr>
+
+  <article class="room">
+    <header>
+      <div>
+        <h1>KE-404</h1>
+        <div class="date"> 21.09.2021</div>
+      </div>
+
+      <button action="{{url_for('booking.booking', id='1')}}" id="KE-404" class="btnBooking" onclick="setModalContent(this)">Book Room</button>
+    
+    </header>
+  </article>
+  
+    <hr> -->
 
 
 {% endblock %}
