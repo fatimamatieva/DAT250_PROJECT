@@ -6,6 +6,8 @@ from werkzeug.exceptions import abort
 from flaskr.auth import login_required
 from flaskr.db import get_db
 
+from datetime import datetime
+
 bp = Blueprint('booking', __name__)
 
 @bp.route('/booking', methods=('GET', 'POST'))
@@ -37,6 +39,7 @@ def confirm():
     return render_template('booking/confirm.html')
 
 def get_room(date, time, room):
+    
     room = get_db().execute(
         'SELECT RoomName, Date, Time'
         ' FROM rooms'
@@ -49,12 +52,27 @@ def get_room(date, time, room):
     return room  
 
 def get_rooms(date, time):
-    rooms = get_db().execute(
-        'SELECT RoomName, Date, Time'
-        ' FROM rooms'
-        ' WHERE Date = ? AND Time = ?',
-        (date,time,)
-    ).fetchone()
+#    rooms = get_db().execute(
+#       'SELECT RoomName, Date, Time'
+ #       ' FROM rooms'
+ #       ' WHERE Date = ? AND Time = ?',
+ #       (date,time,)
+ #   ).fetchone()
+
+    from_hours = time[0:5] + ':00'
+    to_hours = time[8:] + ':00'
+    from_time = date + ' ' + from_hours
+    to_time = date + ' ' + to_hours
+
+    date_time_from = datetime.strptime(from_time, '%Y-%m-%d %H:%M:%S')
+    date_time_to = datetime.strptime(to_time, '%Y-%m-%d %H:%M:%S')
+
+    db = get_db()
+
+    rooms = db.execute(
+    'SELECT id, room_number from room r'
+    ' where not exist(SELECT * FROM room_time where room_id = r.id' 
+    ' and from_time < ? and to_time > ?)',(date_time_from, date_time_to)).fetchall()
 
     if rooms is None:
         abort(404)
