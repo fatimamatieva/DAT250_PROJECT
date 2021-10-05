@@ -24,11 +24,6 @@ def create_app(test_config=None):
     except OSError:
         pass
 
-    # a simple page that says hello
-    @app.route('/hello')
-    def hello():
-        return 'Hello, World!'
-
     from . import db
     db.init_app(app)
 
@@ -41,5 +36,9 @@ def create_app(test_config=None):
     from . import booking
     app.register_blueprint(booking.bp)
     app.add_url_rule('/', endpoint='index')
+    
+    from . import booking
+    app.register_blueprint(booking.bp)
+    app.add_url_rule('/booking', endpoint='booking')
 
     return app
