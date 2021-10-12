@@ -1,0 +1,6 @@
+Needs GIT and PY to run.
+
+Script running must be enabled by running (as adminstrator):
+
+Set-ExecutionPolicy RemoteSigned
+
