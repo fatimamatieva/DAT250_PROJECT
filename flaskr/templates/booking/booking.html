@@ -7,7 +7,9 @@
 
 
 {% block head %}
-    <script type=text/javascript src="{{url_for('static', filename='../../static/booking.js') }}"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="{{url_for('static', filename='../../static/booking.js') }}"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='confirmbox.css') }}">
 {% endblock %}
 
 
@@ -27,32 +29,30 @@
   <input type="submit" value="Show Avaliable Rooms">
 </form>
 <hr>
-<p class="flash">
-  Description about booking: maximum booking days..
-</p>
+<!-- <p class="flash">
+  Description about booking
+</p> -->
 
 {% for room in rooms %}
     <article class="room">
-        <header>
-            <div>
-            <h1>{{room['room_number']}}</h1>
-            <div class="date"> </div>
-            </div>
-            {% if g.user %}
-            <a class="btn" value="Back" href="{{url_for('booking.confirm')}}">
-              <input  class="btn-link" type="button" value="Book Room">
-            </a>
-            {% endif %}
-            
-        </header>
+        <h1>{{room['room_number']}}</h1>
+        <input class="btn-link" type="button" value="Book Room" name="{{room['room_number']}}" onclick="Confirm(this.name)">
     </article>
-
   {% if not loop.last %}
     <hr>
   {% endif %}
 
 {% endfor %}
 
-
+<div id="confirmBox" class="confirm">
+  <div class="confirm-content">
+    <div class="confirm-header">
+      <h2>Confirm Booking</h2>
+      <span class="close">&times;</span>
+    </div>
+    <p class="confirm-text">Confirm booking for room <span id="Room"></span></p>
+    <button id="btnConfirm" class="btn float-right">Confirm</button>
+  </div>
+</div>
 
 {% endblock %}

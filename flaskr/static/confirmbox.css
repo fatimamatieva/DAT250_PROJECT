@@ -1,5 +1,5 @@
 /* The Modal (background) */
-.modal {
+.confirm {
     display: none; 
     position: fixed; 
     z-index: 1; 
@@ -12,8 +12,8 @@
     background-color: rgba(0,0,0,0.4);
 }
   
-  /* Modal Content/Box */
-.modal-content {
+  /*Content/Box */
+.confirm-content {
     margin-top: 0;
     background-color: #fefefe;
     margin-left: auto;
@@ -22,6 +22,8 @@
     padding: 20px;
     border: 1px solid #888;
     max-width: 20rem;
+    overflow: hidden;
+
 }
   
   /* The Close Button */
@@ -38,13 +40,9 @@
     text-decoration: none;
     cursor: pointer;
 }
-
-.modal-header{
+.confirm-header{
     display: flex;
     justify-content: space-between;
 }
 
-.modal-content >form :disabled{
-    opacity: 1 !important;
-    color: black;
-}
+
