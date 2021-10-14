@@ -12,7 +12,7 @@ from datetime import datetime
 bp = Blueprint('booking', __name__)
 
 @bp.route('/booking', methods=('GET', 'POST'))
-#@login_required
+@login_required
 def booking():
     rooms = []
     if request.method == 'POST':
@@ -22,19 +22,45 @@ def booking():
     return render_template('booking/booking.html', rooms=rooms)
 
 @bp.route("/booking/confirm", methods = ['POST'])
-#@login_required
+@login_required
 def confirm():
     if request.is_json:
         data = request.get_json()
         print(data)
-        room = data['room_number']
-        #date = data['date']
-        #time = data['time']
+
+        room_number = int(data['room_number'])
+        print(room_number)
+        print(type(room_number))
+        db = get_db()
+        room_id = db.execute(
+        'SELECT id FROM room'
+        ' WHERE room_number = ?',(room_number,)).fetchone()
+
+        print(room_id['id'])
+
+        date = data['date']
+        date = date[0:10]
+        time = data['time']
+
+        from_hours = time + ':00:00'
+        to_hours = str(int(time)+2) + ':00:00'
+        from_time = date + ' ' + from_hours
+        to_time = date + ' ' + to_hours
+
+        date_time_from = datetime.strptime(from_time, '%Y-%m-%d %H:%M:%S')
+        date_time_to = datetime.strptime(to_time, '%Y-%m-%d %H:%M:%S')
+
         #TODO:  insert new booking into database
         #       should the user have a limited amount of reservations?
 
+        db.execute(
+            'INSERT INTO room_time (room_id, from_time, to_time, user_id)'
+            ' VALUES (?, ?, ?, ?)',
+            (room_id['id'], date_time_from, date_time_to, 2))
+        db.commit()
+
         response = {'message': 'Booking confirmed', 'code': 'SUCCESS'}
-        flash(f'Booking for room {room} confirmed')
+        flash(f'Booking for room {room_number} confirmed')
         return make_response(jsonify(response), 201)
     response = {'message': 'Something want wrong', 'code': 'ERROR'}
 
@@ -92,10 +118,10 @@ def get_rooms(date, time):
     db = get_db()
 
     rooms = db.execute(
-    'SELECT id, room_number from room r'
-    ' where not exists(SELECT * FROM room_time where room_id = r.id' 
+    'SELECT id, room_number FROM room r'
+    ' WHERE not exists(SELECT * FROM room_time where room_id = r.id' 
     ' and from_time < ? and to_time > ?)'
-    ' ORDER BY room_number',(date_time_from, date_time_to)).fetchall()
+    ' ORDER BY room_number',(date_time_to, date_time_from)).fetchall()
 
     if rooms is None:
         abort(404)
