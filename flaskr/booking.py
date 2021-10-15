@@ -1,7 +1,8 @@
 from sqlite3.dbapi2 import Date
 from flask import (
-    Blueprint, flash, g, redirect, render_template, request, url_for, jsonify, make_response
+    Blueprint, flash, g, redirect, render_template, request, url_for, jsonify, make_response, escape
 )
+from flask.sessions import NullSession
 from werkzeug.exceptions import abort
 
 from flaskr.auth import login_required
@@ -15,11 +16,13 @@ bp = Blueprint('booking', __name__)
 #@login_required
 def booking():
     rooms = []
+    today = datetime.now().strftime("%Y-%m-%d")
+    date = None
     if request.method == 'POST':
         date = request.form['date']
         time = request.form['time']
         rooms = get_rooms(date, time)
-    return render_template('booking/booking.html', rooms=rooms)
+    return render_template('booking/booking.html', rooms=rooms, date=date, today=today)
 
 @bp.route("/booking/confirm", methods = ['POST'])
 #@login_required
@@ -34,7 +37,8 @@ def confirm():
         #       should the user have a limited amount of reservations?
 
         response = {'message': 'Booking confirmed', 'code': 'SUCCESS'}
-        flash(f'Booking for room {room} confirmed')
+        #escaping because of untrusted data --> Preventing XXS.
+        flash(f'Booking for room {escape(room)} confirmed')
         return make_response(jsonify(response), 201)
     response = {'message': 'Something want wrong', 'code': 'ERROR'}
 
