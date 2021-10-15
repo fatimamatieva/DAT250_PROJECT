@@ -1,4 +1,5 @@
 import functools
+from types import MethodDescriptorType
 
 from flask import (
     Blueprint, flash, g, redirect, render_template, request, session, url_for
@@ -34,6 +35,7 @@ def register():
                 error = f"User {username} is already registered."
             else:
                 return redirect(url_for("auth.login"))
+        
 
         flash(error)
 
@@ -64,6 +66,28 @@ def login():
         flash(error)
 
     return render_template('auth/login.html')
+
+
+@bp.route('/profile', methods=('GET', 'POST'))
+def profile():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+        db = get_db()
+        error = None
+        user = db.execute(
+            'SELECT * FROM user WHERE username = ?', (username,)
+        ).fetchone()
+        if error is None:
+            session.clear()
+            session['user_id'] = user['id']
+            return redirect(url_for('index'))
+
+        flash(error)
+
+    return render_template('auth/profile.html')
+
+
 
 @bp.before_app_request
 def load_logged_in_user():
