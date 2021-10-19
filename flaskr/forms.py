@@ -3,6 +3,7 @@
 # from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
 # from flaskr import db
 from wtforms import Form, StringField, PasswordField,SubmitField, BooleanField, validators
+from wtforms.validators import InputRequired, Email
 
 
 # class User(db.Model):
