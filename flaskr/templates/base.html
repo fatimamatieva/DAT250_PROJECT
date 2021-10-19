@@ -8,23 +8,97 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     {% block head %}{% endblock %}
 </head>
+
+<style>
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #0041FF;
+  color: white;
+  font-size: 30px;
+}
+
+/* Style for the main nav menu */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #D6D0D3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 160px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: black;
+}
+
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1; /* Style for article box*/
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #000000; 
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+
+  
+	
+</style>
+
+<div class="header">
+  <h1 style="color:white;">UIS ROM BOOKING </h1>
+  <p>Velkommen til booking tjenesten av grupperom for studenter</p>
+</div>
+
   <body>
 
     <nav>
 
       <ul>
-
-        <li>
-          <a title="Homepage" id="home" title="Homepage" href="{{ url_for('index') }}">
+        <li><a title="Homepage" id="home" title="Homepage" href="http://127.0.0.1:5000/">
             Home
-          </a>
-        </li>
+         </a></li>
+		<li><a title="Bookingpage" id="Booking" title="Bookingpage" href="http://127.0.0.1:5000/booking">
+            Booking
+        </a></li>
+    
         {% if g.user %}
 
           <li>
               <a title="Log Out" href="{{ url_for('auth.logout') }}">Sign Out</a>
           </li>
-      
+          
+          <li>
+            <a title="Profile" href="{{ url_for('auth.profile') }}">Profile</a>
+          </li>
           <!-- <div class="dropdown">
             <span>{{ g.user['username'] }}</span>
             <div class="dropdown-content">
@@ -60,6 +134,10 @@
       {% endfor %}
       {% block content %}{% endblock %}
     </section>
+	
+	<footer>
+		<p>Made by PROJ-DAT250 @2021</p>
+	</footer>
 
   </body>
 </html>

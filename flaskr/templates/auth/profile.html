@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Your Profile{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    <h1>Current User:</h1>
+    <label for="username">{{ request.form['username']}}</label>
+  </form>
+{% endblock %}

@@ -1,21 +1,30 @@
+function Confirm(room){
+    //CSRF protection - https://flask-wtf.readthedocs.io/en/0.15.x/csrf/
+    $.ajaxSetup({
+        beforeSend: function(xhr, settings) {
+            if (!/^(GET|HEAD|OPTIONS|TRACE)$/i.test(settings.type)) {
+                xhr.setRequestHeader("X-CSRFToken", $('input[name=csrf_token]').val())
+            }
+        }
+    });
+    var reservation = {
+      date: $("#selectedDate").val(),
+      time: $("#selectedTime").val(),
+      room_number: room,
+    }
 
- 
-window.onload = function() {
-    var dateControl = document.querySelector('input[type="date"]');
-    var dateFormat = getDateFormat(new Date());
-  
-    dateControl.value = dateFormat;
-    dateControl.min = dateFormat;
-  };
-  
-  function getDateFormat(date){
-    var day = date.getDate(),
-       month = date.getMonth() + 1;
-    if (day.toFixed().length == 1){
-      day = '0' + day;
-    }
-    if (month.toFixed().length == 1){
-      month = '0' + month;
-    }
-    return date.getFullYear() + '-' + month + '-' + day
-  }
+    $.ajax({
+      type: "POST",
+      url: "/booking/confirm",
+      data: JSON.stringify(reservation),
+      contentType: "application/json",
+      dataType: 'json',
+      success: function(){
+        //redirect to homepage if booking is success
+        location.href = '/';
+      },
+      error: function(){
+        //display message: something went wrong
+      }   
+    });
+}

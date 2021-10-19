@@ -1,7 +1,7 @@
 import os
 
 from flask import Flask
-
+#from flask_wtf.csrf import CSRFProtect
 
 def create_app(test_config=None):
     # create and configure the app
@@ -23,7 +23,9 @@ def create_app(test_config=None):
         os.makedirs(app.instance_path)
     except OSError:
         pass
-
+    
+    #csrf = CSRFProtect(app)
+    #csrf.init_app(app)
     from . import db
     db.init_app(app)
 

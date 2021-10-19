@@ -7,7 +7,8 @@
 
 
 {% block head %}
-    <script type=text/javascript src="{{url_for('static', filename='../../static/booking.js') }}"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="{{url_for('static', filename='../../static/booking.js') }}"></script>
 {% endblock %}
 
 
@@ -15,7 +16,13 @@
 
 <form method="post">
   <label for="selectedDate" >Date</label>
-  <input name="date" type="date" id="selectedDate">
+  <input name="date" type="date" id="selectedDate" 
+  {% if date%}
+    value="{{date}}"
+  {% else %} 
+    value="{{today}}"
+  {% endif %}
+  min="{{today}}">
 
   <label for="selectedTime" >Time</label>
   <select name="time" id="selectedTime">
@@ -23,36 +30,20 @@
     <option value="10">10:00 - 12:00</option>
     <option value="12">12:00 - 14:00</option>
   </select>
-
+  <!-- <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/> -->
   <input type="submit" value="Show Avaliable Rooms">
 </form>
 <hr>
-<p class="flash">
-  Description about booking: maximum booking days..
-</p>
 
 {% for room in rooms %}
     <article class="room">
-        <header>
-            <div>
-            <h1>{{room['room_number']}}</h1>
-            <div class="date"> </div>
-            </div>
-            {% if g.user %}
-            <a class="btn" value="Back" href="{{url_for('booking.confirm')}}">
-              <input  class="btn-link" type="button" value="Book Room">
-            </a>
-            {% endif %}
-            
-        </header>
+        <h1>{{room['room_number']}}</h1>
+        <input class="btn-link" type="button" value="Book Room" name="{{room['room_number']}}" onclick="Confirm(this.name)">
     </article>
-
   {% if not loop.last %}
     <hr>
   {% endif %}
 
 {% endfor %}
-
-
 
 {% endblock %}
