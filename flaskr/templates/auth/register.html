@@ -1,25 +1,9 @@
 {% extends 'base.html' %}
-
-<<<<<<< HEAD
-{% block header %}
-  <h1>{% block title %}Register{% endblock %}</h1>
-{% endblock %}
-
-{% block content %}
-  <form method="post">
-    <label for="username">Username</label>
-    <input name="username" id="username" required>
-    <label for="password">Password</label>
-    <input type="password" name="password" id="password" required>
-    <input type="submit" value="Register">
-  </form>
-{% endblock %}
-=======
 {% block content %}
 
     <div class="content-section">
         <form method="POST" action="">
-            {{ form.hidden_tag() }}
+            
             <fieldset class="form-group">
                 <legend class="border-bottom mb-4">
                     Join Today
@@ -93,8 +77,7 @@
     </div>
     <div class="border-top pt-3">
         <small class="text-muted">
-            Already Have an Account? <a class="ml-2" href="{{ url_for('login') }}">Sign In</a>
+            Already Have an Account? <a class="ml-2" href="{{ url_for('auth.login') }}">Sign In</a>
         </small>
     </div>
 {% endblock content %}
->>>>>>> 308ba9b9312676893a51373e9051d2332bbaed73
