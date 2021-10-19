@@ -21,7 +21,7 @@ class RegistrationForm(Form):
     email = StringField('Email', [validators.DataRequired(), validators.Email()])
     password = PasswordField('Password', [
         validators.DataRequired(),
-        validators.EqualTo('Retype Password', message='Passwords must match')
+        validators.EqualTo('confirm_password', message='Passwords must match')
     ])
     confirm_password = PasswordField('Confirm Password')
     submit = SubmitField('Sign Up')

@@ -15,8 +15,9 @@ from .forms import *
 def register():
     form = RegistrationForm(request.form)
     if request.method == 'POST' and form.validate():
-        username = request.form['username']
-        password = request.form['password']
+        username = form.username.data
+        email = form.email.data
+        password = form.password.data
         db = get_db()
         error = None
 
@@ -87,8 +88,9 @@ def register():
 def login():
     form = LoginForm(request.form)
     if request.method == 'POST' and form.validate():
-        username = request.form['username']
-        password = request.form['password']
+        username = form.username.data
+        #email = form.email.data
+        password = form.password.data
         db = get_db()
         error = None
         user = db.execute(
