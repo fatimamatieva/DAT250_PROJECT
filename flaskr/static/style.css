@@ -89,7 +89,12 @@ nav ul li a, nav ul li span, header .action {
   background: #cae6f6;
   border: 1px solid var(--color-primary);
 }
-
+.flash.error {
+  background: transparent !important;
+  border: solid red;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 
 .room {
   display: flex;
@@ -111,11 +116,27 @@ nav ul li a, nav ul li span, header .action {
   margin: 1em 0;
   display: flex;
   flex-direction: column;
-  max-width: 20rem;
+  max-width: 20rem !important;
+}
+fieldset{
+  width: 50%;
+  width: clamp(100px, 50%, 400px);
+  
+}
+.content-section,.signin-redirect{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
-form input{
+form input:not(input[type=submit]){
   margin-bottom: 1em;
+  width: 100%;
+}
+
+input:disabled, select:disabled{
+  opacity: 1 !important;
+  color: #000000 !important;
 }
 
 input.danger {
@@ -148,4 +169,62 @@ input[type="submit"], button, .btn-link{
 .btn-group{
   display: flex;
   justify-content: space-between;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #0041FF;
+  color: white;
+  font-size: 30px;
+}
+.text-white, .text-white h1{
+  color: white !important;
+}
+/* Style for the main nav menu */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #D6D0D3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 160px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: black;
+}
+
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1; /* Style for article box*/
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #000000; 
+  padding: 10px;
+  text-align: center;
+  color: white;
 }
