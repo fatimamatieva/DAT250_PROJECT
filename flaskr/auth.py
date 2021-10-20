@@ -19,30 +19,44 @@ def register():
         email = form.email.data
         password = form.password.data
         db = get_db()
-        error = None
+        db.execute(
+            "INSERT INTO user (username, password) VALUES (?, ?)",
+            (email, generate_password_hash(password)),
+        )
+        db.commit()
+        return redirect(url_for("auth.login"))
+    return render_template('auth/register_test.html', form=form)
+    
+# def register():
+#     form = RegistrationForm(request.form)
+#     if request.method == 'POST' and form.validate():
+#     #    username = form.username.data
+#         email = form.email.data
+#         password = form.password.data
+#         db = get_db()
+#         error = None
 
-        if not email:
-            error = 'Email is required.'
-        elif not password:
-            error = 'Password is required.'
+#         if not email:
+#             error = 'Email is required.'
+#         elif not password:
+#             error = 'Password is required.'
 
-        if error is None:
-            try:
-                db.execute(
-                    "INSERT INTO user (username, password) VALUES (?, ?)",
-                    (email, generate_password_hash(password)),
-                )
-                db.commit()
-            except db.IntegrityError:
-                error = f"User {email} is already registered."
-            else:
-                return redirect(url_for("auth.login"))
+#         if error is None:
+#             try:
+#                 db.execute(
+#                     "INSERT INTO user (username, password) VALUES (?, ?)",
+#                     (email, generate_password_hash(password)),
+#                 )
+#                 db.commit()
+#             except db.IntegrityError:
+#                 error = f"User {email} is already registered."
+#             else:
+#                 return redirect(url_for("auth.login"))
         
 
-        flash(error)
+#         flash(error)
 
-    return render_template('auth/register.html', form=form)
-
+#     return render_template('auth/register.html', form=form)
 # def register():
 #     if request.method == 'POST':
 #         username = request.form['username']
@@ -107,7 +121,7 @@ def login():
 
         flash(error)
 
-    return render_template('auth/login.html', form=form)
+    return render_template('auth/login_test.html', form=form)
 # def login():
 #     if request.method == 'POST':
 #         username = request.form['username']

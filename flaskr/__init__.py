@@ -1,7 +1,10 @@
 import os
 
 from flask import Flask
-#from flask_wtf.csrf import CSRFProtect
+from flask_wtf.csrf import CSRFProtect
+from flask import Flask
+from flask_talisman import Talisman
+
 
 def create_app(test_config=None):
     # create and configure the app
@@ -23,9 +26,16 @@ def create_app(test_config=None):
         os.makedirs(app.instance_path)
     except OSError:
         pass
-    
-    #csrf = CSRFProtect(app)
-    #csrf.init_app(app)
+
+    CSRFProtect(app)
+    Talisman(app)
+
+    # talisman = Talisman(
+    #     app,
+    #     content_security_policy=GOOGLE_CSP_POLICY,
+    #     # content_security_policy_nonce_in=['script-src', 'style-src']
+    # )
+
     from . import db
     db.init_app(app)
 

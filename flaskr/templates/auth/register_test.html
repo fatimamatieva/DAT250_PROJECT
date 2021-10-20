@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %}Register{% endblock %}
+{% block content %}
+{% for field, errors in form.errors.items() %}
+<div class="flash">
+    {{ form[field].label }}: {{ ', '.join(errors) }}
+</div>
+{% endfor %}
+
+    <div class="content-section">
+
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">
+                    Join Today
+                </legend>
+                <form method="POST" action="">
+                    {{ form.csrf_token() }}
+                    {{ form.email.label}}
+                    {{ form.email }}
+                    {{ form.password.label}}
+                    {{ form.password }}
+                    {{ form.confirm_password.label}}
+                    {{ form.confirm_password }}
+                    {{ form.submit }}
+       
+                </form>
+            </fieldset>
+
+    </div>
+
+    <div class="signin-redirect">
+
+        <small class="text-muted">
+            Already Have an Account? <a class="ml-2" href="{{ url_for('auth.login') }}">Sign In</a>
+        </small>
+    </div>
+
+{% endblock content %}
