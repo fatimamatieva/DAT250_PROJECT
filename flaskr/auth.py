@@ -15,14 +15,14 @@ from .forms import *
 def register():
     form = RegistrationForm(request.form)
     if request.method == 'POST' and form.validate():
-        username = form.username.data
+    #    username = form.username.data
         email = form.email.data
         password = form.password.data
         db = get_db()
         error = None
 
-        if not username:
-            error = 'Username is required.'
+        if not email:
+            error = 'Email is required.'
         elif not password:
             error = 'Password is required.'
 
@@ -30,11 +30,11 @@ def register():
             try:
                 db.execute(
                     "INSERT INTO user (username, password) VALUES (?, ?)",
-                    (username, generate_password_hash(password)),
+                    (email, generate_password_hash(password)),
                 )
                 db.commit()
             except db.IntegrityError:
-                error = f"User {username} is already registered."
+                error = f"User {email} is already registered."
             else:
                 return redirect(url_for("auth.login"))
         
@@ -88,8 +88,8 @@ def register():
 def login():
     form = LoginForm(request.form)
     if request.method == 'POST' and form.validate():
-        username = form.username.data
-        #email = form.email.data
+     #   username = form.username.data
+        username = form.email.data
         password = form.password.data
         db = get_db()
         error = None
