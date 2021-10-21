@@ -35,7 +35,8 @@ def booking():
 @login_required
 def confirm(room_id):
     booking_data = session['booking']
-    print(booking_data['date'])
+
+#    print(booking_data['date'])
     if request.method == 'POST':
         date = booking_data['date']
         date = date[0:10]
@@ -48,13 +49,43 @@ def confirm(room_id):
 
         date_time_from = datetime.strptime(from_time, '%Y-%m-%d %H:%M:%S')
         date_time_to = datetime.strptime(to_time, '%Y-%m-%d %H:%M:%S')
+
+        if date_time_to < datetime.now():
+            flash(f'You cannot book back in time')
+            return redirect(url_for("booking"))
+
         db = get_db()
+        room_number = db.execute(
+        'SELECT room_number FROM room'
+        ' WHERE id = ?',(room_id,)).fetchone()
+        room_number = room_number['room_number']
+
         db.execute(
             'INSERT INTO room_time (room_id, from_time, to_time, user_id)'
-            ' VALUES (?, ?, ?, ?)',
-            (room_id, date_time_from, date_time_to, 2))
+            ' SELECT id, ?, ?, ?'
+            ' FROM room r'
+            ' WHERE id = ?'
+            ' and not exists(SELECT * FROM room_time where room_id = r.id' 
+            ' and from_time < ? and to_time > ?)'
+            ' and not exists(SELECT * FROM room_time where user_id = ?' 
+            ' and to_time > datetime())',
+            (date_time_from, date_time_to, g.user['id'], room_id, date_time_to, date_time_from, g.user['id']))
         db.commit()
-        flash(f'Booking confirmed')
+
+        booking = db.execute(
+            'SELECT user_id FROM room_time where room_id = ?'
+            ' and from_time = ? and to_time = ?',
+            (room_id, date_time_from, date_time_to)).fetchone()
+
+
+        if booking is None:
+            flash(f'You already have a booking')
+
+        elif booking['user_id'] == g.user['id']:
+            flash(f'Booking for room {escape(room_number)} confirmed')
+        else:
+            flash(f'Room {escape(room_number)} is already booked') 
+
         return redirect(url_for("index"))
 
     return render_template('booking/confirm.html', data=booking_data)

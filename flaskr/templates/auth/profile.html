@@ -7,6 +7,10 @@
 {% block content %}
   <form method="post">
     <h1>Current User:</h1>
-    <label for="username">{{ request.form['username']}}</label>
+    <label for="username">{{g.user['username']}}</label>
+    <h1>Current Booking:</h1>
+    <label for="booking">{{booking['room_number']}}</label>
+    <label for="from_time">{{booking['from_time']}}</label>
+    <label for="to_time">{{booking['to_time']}}</label>
   </form>
 {% endblock %}
