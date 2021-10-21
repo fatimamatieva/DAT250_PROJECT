@@ -28,15 +28,21 @@ def booking():
             'date': date,
             'time': time
         }
-    
-    return render_template('booking/booking.html', rooms=rooms, date=date, today=today, time=['08'==time, '10'==time, '12'==time])
+    context = {
+        'rooms': rooms,
+        'date': date,
+        'today': today,
+        'time': ['08'==time, '10'==time, '12'==time]
+    }
+    return render_template('booking/booking.html', **context)
 
 @bp.route("/booking/confirm/<int:room_id>", methods = ['GET','POST'])
 @login_required
 def confirm(room_id):
+    room_number = get_room(room_id)
+    session['booking']['room'] = room_number
     booking_data = session['booking']
 
-#    print(booking_data['date'])
     if request.method == 'POST':
         date = booking_data['date']
         date = date[0:10]
@@ -55,11 +61,6 @@ def confirm(room_id):
             return redirect(url_for("booking"))
 
         db = get_db()
-        room_number = db.execute(
-        'SELECT room_number FROM room'
-        ' WHERE id = ?',(room_id,)).fetchone()
-        room_number = room_number['room_number']
-
         db.execute(
             'INSERT INTO room_time (room_id, from_time, to_time, user_id)'
             ' SELECT id, ?, ?, ?'
@@ -91,94 +92,13 @@ def confirm(room_id):
     return render_template('booking/confirm.html', data=booking_data)
 
 
-# @bp.route("/booking/confirm", methods = ['POST'])
-# @login_required
-# def confirm():
-#     if request.is_json:
-#         data = request.get_json()
-#         print(data)
+@bp.route("/booking/cancel", methods=('POST',))
+def cancel():
+    flash('Booking canceled')
+    return redirect(url_for('index'))
 
-#         room_number = int(data['room_number'])
-#         print(room_number)
-#         print(type(room_number))
-#         db = get_db()
-#         room_id = db.execute(
-#         'SELECT id FROM room'
-#         ' WHERE room_number = ?',(room_number,)).fetchone()
-
-#         print(room_id['id'])
-
-#         date = data['date']
-#         date = date[0:10]
-#         time = data['time']
-
-#         from_hours = time + ':00:00'
-#         to_hours = str(int(time)+2) + ':00:00'
-#         from_time = date + ' ' + from_hours
-#         to_time = date + ' ' + to_hours
-
-#         date_time_from = datetime.strptime(from_time, '%Y-%m-%d %H:%M:%S')
-#         date_time_to = datetime.strptime(to_time, '%Y-%m-%d %H:%M:%S')
-
-#         #TODO:  insert new booking into database
-#         #       should the user have a limited amount of reservations?
-
-#         db.execute(
-#             'INSERT INTO room_time (room_id, from_time, to_time, user_id)'
-#             ' VALUES (?, ?, ?, ?)',
-#             (room_id['id'], date_time_from, date_time_to, 2))
-#         db.commit()
-
-#         response = {'message': 'Booking confirmed', 'code': 'SUCCESS'}
-
-#         #escaping because of untrusted data --> Preventing XXS.
-#         flash(f'Booking for room {escape(room_number)} confirmed')
-#         return make_response(jsonify(response), 201)
-
-#     response = {'message': 'Something want wrong', 'code': 'ERROR'}
-#     return make_response(jsonify(response),400)
-
-#@bp.route('/booking/confirm/', methods=('GET', 'POST'))
-#@login_required
-#def confirm():
-#    if request.method == 'POST':
-#        room = request.form['room']
-#        date = request.form['date']
-#        time = request.form['time']
-#        comments = request.form['comments']
-#        db = get_db()
-#        db.execute(
-#            'INSERT INTO room_time (room_id, from_time, to_time, Comments, user_id)'
-#            ' VALUES (?, ?, ?, ?, ?)',
-#            (date, room, time, comments, g.user['id'])
-#        )
-#        db.commit()
-#        flash("Booking successful")
-#        return redirect(url_for('blog.index'))
-#
-#    return render_template('booking/confirm.html')
-
-# def get_room(date, time, room):
-    
-#     room = get_db().execute(
-#         'SELECT RoomName, Date, Time'
-#         ' FROM rooms'
-#         ' WHERE Date = ? AND Time = ? AND RoomName= ?',
-#         (date,time,room,)
-#     ).fetchone()
-
-#     if room is None:
-#         abort(404)
-#     return room  
 
 def get_rooms(date, time):
-#    rooms = get_db().execute(
-#       'SELECT RoomName, Date, Time'
- #       ' FROM rooms'
- #       ' WHERE Date = ? AND Time = ?',
- #       (date,time,)
- #   ).fetchone()
-
     from_hours = time + ':00:00'
     to_hours = str(int(time)+2) + ':00:00'
     from_time = date + ' ' + from_hours
@@ -199,3 +119,12 @@ def get_rooms(date, time):
         abort(404)
     return rooms   
 
+def get_room(id):
+    db = get_db()
+    room_number = db.execute(
+    'SELECT room_number FROM room'
+    ' WHERE id = ?',(id,)).fetchone()
+
+    if room_number is None:
+        abort(404)
+    return room_number['room_number']  

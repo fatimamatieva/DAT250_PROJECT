@@ -1,6 +1,7 @@
 :root{
     --color-primary: #377ba8;
     --color-primary-dark: #003253;
+    --color-primary-light: #d0e5ee;
   }
 
 html {
@@ -96,17 +97,6 @@ nav ul li a, nav ul li span, header .action {
   width: fit-content;
 }
 
-.room {
-  display: flex;
-  align-items: flex-end;
-  font-size: 0.85em;
-  justify-content: space-between;
-}
-
-.room h1 {
-  font-size: 1.5em;
-  margin-bottom: 0;
-}
 
 .content:last-child {
   margin-bottom: 0;
@@ -227,4 +217,44 @@ footer {
   padding: 10px;
   text-align: center;
   color: white;
+}
+
+
+
+.confirm:hover{
+  background-color: var(--color-primary-light);
+}
+
+a.confirm {
+  text-decoration: none;
+  display: flex;
+  align-items: flex-end;
+  font-size: 0.85em;
+  justify-content: space-between;
+  color: #000000;
+  border-bottom: 1px solid rgb(195, 195, 195);
+  padding: .3rem;
+}
+details > summary{
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--color-primary-dark);
+}
+
+details{
+  background-color: var(--color-primary-light);
+  padding: 1rem;
+}
+
+.btn{
+  text-decoration: none;
+  padding: .4rem;
+  color: white;
+  border-radius: .2rem;
+  width: fit-content;
+  border: none;
+}
+
+.btn-danger{
+  background-color: #B22222;
 }

@@ -5,12 +5,21 @@
 {% endblock %}
 
 {% block content %}
-  <form method="post">
-    <h1>Current User:</h1>
-    <label for="username">{{g.user['username']}}</label>
-    <h1>Current Booking:</h1>
-    <label for="booking">{{booking['room_number']}}</label>
-    <label for="from_time">{{booking['from_time']}}</label>
-    <label for="to_time">{{booking['to_time']}}</label>
+  <h1>Current User:</h1>
+<p>{{g.user['username']}}</p>
+
+<h1>Current Booking</h1>
+<details>
+  <summary>
+      Room {{booking['room_number']}}
+  </summary>
+  <p> Date: {{ booking['from_time'].split(' ')[0] }}</p>
+  <p> Time: {{ booking['from_time'].split(' ')[1] }} - {{booking['to_time'].split(' ')[1]}}</p>
+
+  <p>Would you like to cancel your booking?</p>
+  <form  action="{{url_for('booking.cancel')}}" method="post">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+    <button type="submit" class="btn btn-danger">Cancel Booking</button>
   </form>
+</details>
 {% endblock %}
