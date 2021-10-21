@@ -1,22 +1,10 @@
 {% extends 'base.html' %}
 
-{% block header %}
-  <h1>{% block title %}Reservation{% endblock %}</h1>
-
-{% endblock %}
-
-
-{% block head %}
-
-<script  src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<!-- <script  src="{{ url_for('static', filename='jquery.min.js') }}"></script> -->
-<script  type="text/javascript" src="{{url_for('static', filename='../../static/booking.js') }}"></script>
-{% endblock %}
-
+{% block title %}Reservation{% endblock %}
 
 {% block content %}
 
-
+<h1>Confirm booking for room  {{data['room']}} </h1>
 
 <form method="post" id="bookingForm">
   <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
@@ -37,5 +25,5 @@
   
   <input type="submit" value="Confirm Booking">
 </form>
-<a href="{{url_for('booking.booking')}}"> Go back to booking site</a>
+<a href="{{url_for('booking.booking')}}"> &lt Previous </a>
 {% endblock %}

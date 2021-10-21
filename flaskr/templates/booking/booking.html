@@ -14,7 +14,6 @@
 {% endblock %}
 
 
-
 {% block content %}
 <form method="post" id="bookingForm">
   <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
@@ -29,26 +28,35 @@
   min="{{today}}">
 
   <label for="selectedTime">Time</label>
-  <select name="time" id="selectedTime">
-    <option {% if time[0] %}selected  {% endif %}  value="08">08:00 - 10:00</option>
-    <option {% if time[1] %}selected  {% endif %}  value="10">10:00 - 12:00</option>
-    <option {% if time[2] %}selected  {% endif %} value="12">12:00 - 14:00</option>
+  <select readonly name="time" id="selectedTime">
+    <option readonly {% if time[0] %}selected  {% endif %}  value="08">08:00 - 10:00</option>
+    <option readonly {% if time[1] %}selected  {% endif %}  value="10">10:00 - 12:00</option>
+    <option readonly {% if time[2] %}selected  {% endif %} value="12">12:00 - 14:00</option>
   </select>
   
   <input type="submit" value="Show Avaliable Rooms">
 </form>
 <hr>
-
 {% for room in rooms %}
-    <article class="room">
-        <h1>{{room['room_number']}}</h1>
-        <!-- <input class="btn-link" type="button" value="Book Room" name="{{room['room_number']}}" onclick="Confirm(this.name)"> -->
-        <a href="{{url_for('booking.confirm', room_id=room['id'])}}">Book Room</a>
+  <a class="confirm" href="{{url_for('booking.confirm', room_id=room['id'])}}">
+    <p>Room {{room['room_number']}}</p>
+    <p>{{date}}</p>
+    {% if time[0] %} 
+      <p>
+        08:00 - 10:00
+      </p>
+    {% elif time[1] %}
+    <p>
+      10:00 - 12:00
+    </p>
+    {% elif time[2 ] %}
+    <p>
+      12:00 - 14:00
+    </p>
 
-    </article>
-  {% if not loop.last %}
-    <hr>
-  {% endif %}
+    {% endif %}
+    <p>Book room ></p>
+  </a>
 
 {% endfor %}
 
