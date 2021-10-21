@@ -94,8 +94,19 @@ def confirm(room_id):
 
 @bp.route("/booking/cancel", methods=('POST',))
 def cancel():
-    flash('Booking canceled')
-    return redirect(url_for('index'))
+    db = get_db()
+    booking = db.execute(
+        'SELECT t.id, t.room_id, r.room_number, substr(t.from_time, 1) from_time, substr(t.to_time, 1) to_time from room_time t'
+        ' join room r on t.room_id = r.id'
+        ' where t.user_id = ? and t.to_time > datetime()',
+        (g.user['id'],)).fetchone()
+    if booking is not None:
+        db.execute(
+        'DELETE from room_time where id = ?',
+        (booking['id'],))
+        db.commit()
+        flash('Booking canceled')
+        return redirect(url_for('index'))
 
 
 def get_rooms(date, time):
