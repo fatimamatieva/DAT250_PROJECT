@@ -8,6 +8,8 @@
   <h1>Current User:</h1>
 <p>{{g.user['username']}}</p>
 
+
+{% if booking %}
 <h1>Current Booking</h1>
 <details>
   <summary>
@@ -22,4 +24,12 @@
     <button type="submit" class="btn btn-danger">Cancel Booking</button>
   </form>
 </details>
+{% else %}
+<p class="flash">
+
+      You have no bookings - 
+    <a href="{{url_for('booking.booking')}}">Find avaliable rooms</a>
+</p>
+
+{% endif %}
 {% endblock %}
