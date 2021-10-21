@@ -28,13 +28,17 @@ def create_app(test_config=None):
         pass
 
     CSRFProtect(app)
-    Talisman(app)
-
-    # talisman = Talisman(
-    #     app,
-    #     content_security_policy=GOOGLE_CSP_POLICY,
-    #     # content_security_policy_nonce_in=['script-src', 'style-src']
-    # )
+    Talisman(app,
+    content_security_policy={
+        'font-src': [
+            '\'self\'',
+            'https://fonts.gstatic.com',
+        ],
+        'style-src': [
+            '\'self\'',
+            'https://fonts.googleapis.com',
+        ],
+    })
 
     from . import db
     db.init_app(app)
@@ -49,5 +53,6 @@ def create_app(test_config=None):
     from . import booking
     app.register_blueprint(booking.bp)
     app.add_url_rule('/booking', endpoint='booking')
+
 
     return app
