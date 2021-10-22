@@ -24,7 +24,9 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Roboto', sans-serif;
 	color: var(--color-primary);
 	margin: 1rem 0;
+	z-index:1;
 }
+
 a {
 	color: var(--color-primary);
 }
@@ -230,4 +232,10 @@ details{
     margin-right: auto;
     display:block;
 	position: absolute;
+	z-index:0;
+}
+@media (max-width:1020px) {
+    .logo {
+        display: none;
+    }
 }
