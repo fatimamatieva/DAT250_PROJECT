@@ -26,8 +26,8 @@ def register():
         )
         db.commit()
         return redirect(url_for("auth.login"))
-    current_app.logger.info('Register page opened, (with above data entered, if exists)(auth/register_test.html).')
-    return render_template('auth/register_test.html', form=form)
+    current_app.logger.info('Register page opened, (with above data entered, if exists)(auth/register.html).')
+    return render_template('auth/register.html', form=form)
     
 # def register():
 #     form = RegistrationForm(request.form)
@@ -124,8 +124,8 @@ def login():
             return redirect(url_for('index'))
 
         flash(error)
-    current_app.logger.info('Login page opened. (auth/login_test.html)')
-    return render_template('auth/login_test.html', form=form)
+    current_app.logger.info('Login page opened. (auth/login.html)')
+    return render_template('auth/login.html', form=form)
 # def login():
 #     if request.method == 'POST':
 #         username = request.form['username']
