@@ -18,23 +18,20 @@
     </div>
 
     <nav>
-
       <ul>
-        <li><a title="Homepage" id="home" title="Homepage" href="{{ url_for('index') }}">
-            Home
-         </a></li>
-		<li><a title="Bookingpage" id="Booking" title="Bookingpage" href="{{ url_for('booking.booking') }}">
-            Booking
-        </a></li>
+        <li><a title="Bookingpage" id="Booking" title="Bookingpage" href="{{ url_for('booking.booking') }}">
+          Booking
+      </a></li>
+
 
         {% if g.user %}
 
           <li>
-              <a title="Log Out" href="{{ url_for('auth.logout') }}">Sign Out</a>
+            <a title="Profile" href="{{ url_for('auth.profile') }}">Profile</a>
           </li>
 
           <li>
-            <a title="Profile" href="{{ url_for('auth.profile') }}">Profile</a>
+              <a title="Log Out" href="{{ url_for('auth.logout') }}">Sign Out</a>
           </li>
 
         {% else %}

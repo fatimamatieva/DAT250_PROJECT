@@ -168,33 +168,8 @@ def profile():
         ' where t.user_id = ? and t.to_time > datetime()',
         (g.user['id'],)).fetchone()
 
-#    if booking is not None:
-#        db.execute(
- #           'DELETE from room_time where id = ?',
-  #          (booking['id'],))
-  #      db.commit()
-
-
-
-
-
-    if request.method == 'POST':
-        username = request.form['username']
-        password = request.form['password']
-        db = get_db()
-        error = None
-        user = db.execute(
-            'SELECT * FROM user WHERE username = ?', (username,)
-        ).fetchone()
-        if error is None:
-            session.clear()
-            session['user_id'] = user['id']
-            return redirect(url_for('index'))
-
-        flash(error)
     current_app.logger.info('Profile page opened. (auth/profile.html)')
     return render_template('auth/profile.html', booking=booking)
-
 
 
 @bp.before_app_request

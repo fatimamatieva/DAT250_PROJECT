@@ -14,7 +14,7 @@ from datetime import datetime
 
 bp = Blueprint('booking', __name__)
 
-@bp.route('/booking', methods=('GET', 'POST'))
+@bp.route('/', methods=('GET', 'POST'))
 @login_required
 def booking():
     rooms = []
@@ -61,7 +61,7 @@ def confirm(room_id):
         if date_time_to < datetime.now():
             flash(f'You cannot book back in time')
             current_app.logger.warning('User tried to timetravel back in time.')
-            return redirect(url_for("booking"))
+            return redirect(url_for("index"))
 
         db = get_db()
         db.execute(
