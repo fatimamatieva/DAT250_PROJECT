@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 
-{% block header %}
-  <h1>{% block title %}Your Profile{% endblock %}</h1>
-{% endblock %}
+
+{% block title %} Profile{% endblock %}
+
 
 {% block content %}
   <h1>Current User:</h1>
@@ -24,6 +24,7 @@
     <button type="submit" class="btn btn-danger">Cancel Booking</button>
   </form>
 </details>
+
 {% else %}
 <p class="flash">
 

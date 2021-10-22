@@ -19,14 +19,16 @@
 
     <nav>
       <ul>
-        <li><a title="Bookingpage" id="Booking" title="Bookingpage" href="{{ url_for('booking.booking') }}">
-          Booking
-      </a></li>
+        <li {% if not g.user %} class="mr-auto" {% endif %}>
+            <a  title="Booking" id="home" href="{{ url_for('booking.booking') }}">
+              Booking
+          </a>
+        </li>
 
 
         {% if g.user %}
 
-          <li>
+          <li class="mr-auto">
             <a title="Profile" href="{{ url_for('auth.profile') }}">Profile</a>
           </li>
 
