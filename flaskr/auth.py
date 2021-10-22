@@ -1,3 +1,4 @@
+from flask import current_app
 import functools
 from types import MethodDescriptorType
 
@@ -25,6 +26,7 @@ def register():
         )
         db.commit()
         return redirect(url_for("auth.login"))
+    current_app.logger.info('Register page opened, (with above data entered, if exists)(auth/register_test.html).')
     return render_template('auth/register_test.html', form=form)
     
 # def register():
@@ -113,14 +115,16 @@ def login():
 
         if user is None or not check_password_hash(user['password'], password):
             error = 'Incorrect username or password.'
+            current_app.logger.warning('Incorrect password entered.')
 
         if error is None:
             session.clear()
             session['user_id'] = user['id']
+            current_app.logger.info('Above user logged in.')
             return redirect(url_for('index'))
 
         flash(error)
-
+    current_app.logger.info('Login page opened. (auth/login_test.html)')
     return render_template('auth/login_test.html', form=form)
 # def login():
 #     if request.method == 'POST':
@@ -188,7 +192,7 @@ def profile():
             return redirect(url_for('index'))
 
         flash(error)
-
+    current_app.logger.info('Profile page opened. (auth/profile.html)')
     return render_template('auth/profile.html', booking=booking)
 
 
@@ -207,12 +211,14 @@ def load_logged_in_user():
 @bp.route('/logout')
 def logout():
     session.clear()
+    current_app.logger.info('User logged out.')
     return redirect(url_for('index'))
 
 def login_required(view):
     @functools.wraps(view)
     def wrapped_view(**kwargs):
         if g.user is None:
+            current_app.logger.warning('User not logged in, redirecting to "auth.login".')
             return redirect(url_for('auth.login'))
 
         return view(**kwargs)

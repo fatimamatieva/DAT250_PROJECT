@@ -2,7 +2,7 @@ from flask import (
     Blueprint, flash, g, redirect, render_template, request, url_for
 )
 from werkzeug.exceptions import abort
-
+from flask import current_app
 from flaskr.auth import login_required
 from flaskr.db import get_db
 
@@ -16,6 +16,7 @@ def index():
         ' FROM post p JOIN user u ON p.author_id = u.id'
         ' ORDER BY created DESC'
     ).fetchall()
+    current_app.logger.info('Index page opened. (blog/index.html)')
     return render_template('blog/index.html', posts=posts)
 
 

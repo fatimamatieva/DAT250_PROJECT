@@ -27,7 +27,7 @@ class RegistrationForm(FlaskForm):
         # validators.Regexp(pattern)
     ])
     confirm_password = PasswordField('Confirm Password')
-    submit = SubmitField('Resgister')
+    submit = SubmitField('Register')
 
     def validate_email(self, email):
         print(email.data)
