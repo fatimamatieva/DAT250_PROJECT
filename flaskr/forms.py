@@ -73,7 +73,8 @@ class ChangePassword(FlaskForm):
         # validators.Regexp(pattern)
     
     ])
-    confirm_password = PasswordField('Confirm Password')
+    new_password = PasswordField('New Password')
+    confirm_new_password = PasswordField('Confirm New Password')
     submit = SubmitField('Change Password')
 
     def validate_password(self, password):

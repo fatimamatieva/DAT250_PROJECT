@@ -5,9 +5,20 @@
 
 
 {% block content %}
-  <h1>Current User:</h1>
-<p>{{g.user['username']}}</p>
 
+<form method="POST" action="">
+  {{ form.csrf_token() }}
+  {{ form.email.label}}
+  {{ form.email (value=g.user['username'], disabled="true")}}
+  {{ form.password.label}}
+  {{ form.password }}
+  {{ form.new_password.label}}
+  {{ form.new_password }}
+  {{ form.confirm_new_password.label}}
+  {{ form.confirm_new_password }}
+  {{ form.submit }}
+
+</form>
 
 {% if booking %}
 <h1>Current Booking</h1>

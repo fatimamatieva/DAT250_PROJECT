@@ -81,12 +81,15 @@ def profile():
         user = db.execute(
             'SELECT * FROM user WHERE username = ?', (username,)
         ).fetchone()
+        
     
 
-
     def change_password():
+        old_password=form.password
+        new_password = form.new_password
+
         badge_list = []
-        if form.validate_on_submit():
+        if form.validate():
             if user(form.password):
                 user.password = form.new_password.data
 
@@ -101,7 +104,7 @@ def profile():
                 current_app.logger.info('Password updated. (auth/profile.html) USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
                 return redirect(url_for('index'))
             else:
-                flash('Original password is invalid.')
+                flash('Original password is invalid.', 'error')
                 current_app.logger.info('Original password invalid input. (auth/profile.html) USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
         return render_template(
             'index',
@@ -110,7 +113,7 @@ def profile():
             badge_list=badge_list)
 
     current_app.logger.info('Profile page opened. (auth/profile.html) USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
-    return render_template('auth/profile.html', booking=booking, date=date_string)    
+    return render_template('auth/profile.html', booking=booking, date=date_string, form=form)    
 
 
 
