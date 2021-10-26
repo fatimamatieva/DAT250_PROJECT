@@ -97,6 +97,7 @@ def profile():
                     db.execute(
                     "UPDATE user set password = ? where id = ? ",
                     (generate_password_hash(new_password),g.user['id']),)
+                    db.commit()
 
                 db.session.add(user)
                 db.session.commit()
