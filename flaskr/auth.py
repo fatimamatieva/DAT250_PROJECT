@@ -50,7 +50,7 @@ def login():
         if error is None:
             session.clear()
             session['user_id'] = user['id']
-            current_app.logger.info('Above user logged in. IP: ' + str(request.environ['REMOTE_ADDR']))
+            current_app.logger.info(user['username'] + ' logged in. IP: ' + str(request.environ['REMOTE_ADDR']))
             return redirect(url_for('index'))
             
 
@@ -87,18 +87,18 @@ def profile():
                 db.session.add(user)
                 db.session.commit()
                 flash('Your password has been updated.')
-                current_app.logger.info('Password updated. (auth/profile.html) IP: ' + str(request.environ['REMOTE_ADDR']))
+                current_app.logger.info('Password updated. (auth/profile.html) USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
                 return redirect(url_for('index'))
             else:
                 flash('Original password is invalid.')
-                current_app.logger.info('Original password invalid input. (auth/profile.html) IP: ' + str(request.environ['REMOTE_ADDR']))
+                current_app.logger.info('Original password invalid input. (auth/profile.html) USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
         return render_template(
             'index',
             form=form,
             user=user,
             badge_list=badge_list)
 
-    current_app.logger.info('Profile page opened. (auth/profile.html) IP: ' + str(request.environ['REMOTE_ADDR']))
+    current_app.logger.info('Profile page opened. (auth/profile.html) USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
     return render_template('auth/profile.html', booking=booking)
     
     
@@ -118,7 +118,7 @@ def load_logged_in_user():
 
 @bp.route('/logout')
 def logout():
-    current_app.logger.info('User logged out. (auth/profile.html) IP: ' + str(request.environ['REMOTE_ADDR']))
+    current_app.logger.info('User logged out. (auth/profile.html) USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
     session.clear()
     return redirect(url_for('index'))
 
@@ -126,7 +126,7 @@ def login_required(view):
     @functools.wraps(view)
     def wrapped_view(**kwargs):
         if g.user is None:
-            current_app.logger.warning('User not logged in, redirecting to "auth.login".' + str(request.environ['REMOTE_ADDR']))
+            current_app.logger.warning('User not logged in, redirecting to "auth.login". ' + str(request.environ['REMOTE_ADDR']))
             return redirect(url_for('auth.login'))
 
         return view(**kwargs)
