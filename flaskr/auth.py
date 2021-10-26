@@ -1,4 +1,4 @@
-from flask import current_app
+from flask import current_app, request
 import functools
 from types import MethodDescriptorType
 
@@ -25,7 +25,7 @@ def register():
         )
         db.commit()
         return redirect(url_for("auth.login"))
-    current_app.logger.info('Register page opened, (with above data entered, if exists)(auth/register.html).')
+    current_app.logger.info('Register page opened, (with above data entered, if exists)(auth/register.html). IP: ' + str(request.environ['REMOTE_ADDR']))
     return render_template('auth/register.html', form=form)
     
 
@@ -45,17 +45,17 @@ def login():
 
         if user is None or not check_password_hash(user['password'], password):
             error = 'Incorrect username or password.'
-            current_app.logger.warning('Incorrect password entered.')
+            current_app.logger.warning('Incorrect password entered. IP: ' + str(request.environ['REMOTE_ADDR']))
 
         if error is None:
             session.clear()
             session['user_id'] = user['id']
-            current_app.logger.info('Above user logged in.')
+            current_app.logger.info('Above user logged in. IP: ' + str(request.environ['REMOTE_ADDR']))
             return redirect(url_for('index'))
             
 
         flash(error)
-    current_app.logger.info('Login page opened. (auth/login.html)')
+    current_app.logger.info('Login page opened. (auth/login.html) IP: ' + str(request.environ['REMOTE_ADDR']))
     return render_template('auth/login.html', form=form)
 
 @bp.route('/profile', methods=('GET', 'POST'))
@@ -87,16 +87,18 @@ def profile():
                 db.session.add(user)
                 db.session.commit()
                 flash('Your password has been updated.')
+                current_app.logger.info('Password updated. (auth/profile.html) IP: ' + str(request.environ['REMOTE_ADDR']))
                 return redirect(url_for('index'))
             else:
                 flash('Original password is invalid.')
+                current_app.logger.info('Original password invalid input. (auth/profile.html) IP: ' + str(request.environ['REMOTE_ADDR']))
         return render_template(
             'index',
             form=form,
             user=user,
             badge_list=badge_list)
 
-    current_app.logger.info('Profile page opened. (auth/profile.html)')
+    current_app.logger.info('Profile page opened. (auth/profile.html) IP: ' + str(request.environ['REMOTE_ADDR']))
     return render_template('auth/profile.html', booking=booking)
     
     
@@ -116,15 +118,15 @@ def load_logged_in_user():
 
 @bp.route('/logout')
 def logout():
+    current_app.logger.info('User logged out. (auth/profile.html) IP: ' + str(request.environ['REMOTE_ADDR']))
     session.clear()
-    current_app.logger.info('User logged out.')
     return redirect(url_for('index'))
 
 def login_required(view):
     @functools.wraps(view)
     def wrapped_view(**kwargs):
         if g.user is None:
-            current_app.logger.warning('User not logged in, redirecting to "auth.login".')
+            current_app.logger.warning('User not logged in, redirecting to "auth.login".' + str(request.environ['REMOTE_ADDR']))
             return redirect(url_for('auth.login'))
 
         return view(**kwargs)

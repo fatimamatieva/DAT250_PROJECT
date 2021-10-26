@@ -1,4 +1,4 @@
-from flask import current_app
+from flask import current_app, request
 from sqlite3.dbapi2 import Date
 from flask import (
     Blueprint, flash, g, redirect, render_template, request, url_for, jsonify, make_response, escape,session
@@ -35,7 +35,7 @@ def booking():
         'today': today,
         'time': ['08'==time, '10'==time, '12'==time]
     }
-    current_app.logger.info('Booking page opened. (booking/booking.html)')
+    current_app.logger.info('Booking page opened. (booking/booking.html) IP: ' + str(request.environ['REMOTE_ADDR']))
     return render_template('booking/booking.html', **context)
 
 @bp.route("/booking/confirm/<int:room_id>", methods = ['GET','POST'])
@@ -60,7 +60,7 @@ def confirm(room_id):
 
         if date_time_to < datetime.now():
             flash(f'You cannot book back in time')
-            current_app.logger.warning('User tried to timetravel back in time.')
+            current_app.logger.warning('User tried to timetravel back in time. IP: ' + str(request.environ['REMOTE_ADDR']))
             return redirect(url_for("index"))
 
         db = get_db()
@@ -84,16 +84,16 @@ def confirm(room_id):
 
         if booking is None:
             flash(f'You already have a booking')
-            current_app.logger.warning('User already has booked a room.')
+            current_app.logger.warning('User already has booked a room. IP: ' + str(request.environ['REMOTE_ADDR']))
 
         elif booking['user_id'] == g.user['id']:
             flash(f'Booking for room {escape(room_number)} confirmed')
             current_app.logger.warning('Room booked.')
         else:
             flash(f'Room {escape(room_number)} is already booked') 
-            current_app.logger.warning('Room already booked.')
+            current_app.logger.warning('Room already booked. IP: ' + str(request.environ['REMOTE_ADDR']))
         return redirect(url_for("index"))
-    current_app.logger.info('Booking confirm page opened. (booking/confirm.html)')
+    current_app.logger.info('Booking confirm page opened. (booking/confirm.html) IP: ' + str(request.environ['REMOTE_ADDR']))
     return render_template('booking/confirm.html', data=booking_data)
 
 
@@ -111,7 +111,7 @@ def cancel():
         (booking['id'],))
         db.commit()
         flash('Booking canceled')
-        current_app.logger.warning('Room booking cancelled.')
+        current_app.logger.warning('Room booking cancelled. IP: ' + str(request.environ['REMOTE_ADDR']))
         return redirect(url_for('index'))
 
 
