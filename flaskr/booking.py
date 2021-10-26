@@ -36,7 +36,7 @@ def booking():
         'time': ['08'==time, '10'==time, '12'==time],
         'date_str': dateString(date)
     }
-    current_app.logger.info('Booking page opened. (booking/booking.html) IP: ' + str(request.environ['REMOTE_ADDR']))
+    current_app.logger.info('Booking page opened. (booking/booking.html) USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
     return render_template('booking/booking.html', **context)
 
 @bp.route("/booking/confirm/<int:room_id>", methods = ['GET','POST'])
@@ -61,7 +61,7 @@ def confirm(room_id):
 
         if date_time_to < datetime.now():
             flash('You cannot book back in time', "error")
-            current_app.logger.warning('User tried to timetravel back in time. IP: ' + str(request.environ['REMOTE_ADDR']))
+            current_app.logger.warning('User tried to timetravel back in time. USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
 
             return redirect(url_for("index"))
 
@@ -85,19 +85,22 @@ def confirm(room_id):
 
 
         if booking is None:
+
             flash(f'You already have a booking', "error")
-            current_app.logger.warning('User already has booked a room. IP: ' + str(request.environ['REMOTE_ADDR']))
+            current_app.logger.warning('User already has booked a room. USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
+
 
 
         elif booking['user_id'] == g.user['id']:
             flash(f'Booking for room {escape(room_number)} confirmed', "info")
             current_app.logger.warning('Room booked.')
         else:
+
             flash(f'Room {escape(room_number)} is already booked', "error") 
-            current_app.logger.warning('Room already booked. IP: ' + str(request.environ['REMOTE_ADDR']))
+            current_app.logger.warning('Room already booked. USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
 
         return redirect(url_for("index"))
-    current_app.logger.info('Booking confirm page opened. (booking/confirm.html) IP: ' + str(request.environ['REMOTE_ADDR']))
+    current_app.logger.info('Booking confirm page opened. (booking/confirm.html) USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
     return render_template('booking/confirm.html', data=booking_data)
 
 
@@ -115,9 +118,11 @@ def cancel():
         'DELETE from room_time where id = ?',
         (booking['id'],))
         db.commit()
+
         flash('Booking canceled', "info")
-        current_app.logger.warning('Room booking cancelled. IP: ' + str(request.environ['REMOTE_ADDR']))
+        current_app.logger.warning('Room booking cancelled. USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
         return redirect(url_for('auth.profile'))
+
 
 
 
