@@ -8,16 +8,23 @@ from flaskr.db import get_db
 
         
 class RegistrationForm(FlaskForm):
-    email = StringField('Email', [validators.DataRequired(), validators.Email(), validators.Length(min=8, max=20)])
+    email = StringField('Email', [
+        validators.DataRequired(), 
+        # validators.Email(), 
+        validators.Regexp('.*(@uis\.no)$', message="Invalid email. Use your student email")
+    ])
+
     password = PasswordField('Password', [
         validators.DataRequired(),
-        validators.EqualTo('Confirm_password', message='Passwords must match')
+        validators.EqualTo('confirm_password', message="Passwords must match")
         #TODO:
         #password policy? symbols/uppercase/lowercase
         # validators.Regexp(pattern)
     
     ])
-    confirm_password = PasswordField('Confirm Password')
+    confirm_password = PasswordField('Confirm Password',[
+        validators.DataRequired()
+    ])
     submit = SubmitField('Register')
 
     def validate_password(self, password):
