@@ -55,7 +55,7 @@ def login():
             return redirect(url_for('index'))
             
 
-        flash(error)
+        flash(error, 'error')
     current_app.logger.info('Login page opened. (auth/login.html) IP: ' + str(request.environ['REMOTE_ADDR']))
     return render_template('auth/login.html', form=form)
 
@@ -101,7 +101,7 @@ def profile():
 
                 db.session.add(user)
                 db.session.commit()
-                flash('Your password has been updated.')
+                flash('Your password has been updated.', 'info')
                 current_app.logger.info('Password updated. (auth/profile.html) USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
                 return redirect(url_for('index'))
             else:

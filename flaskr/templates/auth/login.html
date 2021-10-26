@@ -1,38 +1,40 @@
 {% extends 'base.html' %}
 {% block title %}Sign In{% endblock %}
 {% block content %}
-
 {% if form.errors.items()%}
-<div class="flash error form">
-    {% for field, errors in form.errors.items() %}
-        <div class="error-message">
-            
-            {{ ', '.join(errors) }}
-        </div>
-    {% endfor %}
+<div class="form-error-container">
+    <div class="error form">
+        {% for field, errors in form.errors.items() %}
+            <div class="error-message">
+                
+                {{ ', '.join(errors) }}
+            </div>
+        {% endfor %}
+    </div>
+
 </div>
 {%endif%}
-    <div class="content-section">
-        <fieldset>
-            <legend >
-                Sign in
-            </legend>
-            <form method="POST" action="">
-                {{ form.csrf_token() }}
-                {{ form.email.label}}
-                {{ form.email(autocomplete="off") }}
-                {{ form.password.label}}
-                {{ form.password }}
-                {{ form.submit }}
-    
-            </form>
-        </fieldset>
 
-    </div>
-    <div class="signin-redirect">
-        <small class="text-muted">
-            Need an Account? <a class="ml-2" href="{{ url_for('auth.register') }}">Sign Up</a>
-        </small>
-    </div>
+<div class="content-section">
+    <fieldset>
+        <legend >
+            Sign in
+        </legend>
+        <form method="POST" action="">
+            {{ form.csrf_token() }}
+            {{ form.email.label}}
+            {{ form.email(autocomplete="off") }}
+            {{ form.password.label}}
+            {{ form.password }}
+            {{ form.submit }}
+
+        </form>
+    </fieldset>
+</div>
+<div class="signin-redirect">
+    <small class="text-muted">
+        Need an Account? <a class="ml-2" href="{{ url_for('auth.register') }}">Sign Up</a>
+    </small>
+</div>
 
 {% endblock content %}

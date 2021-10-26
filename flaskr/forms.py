@@ -2,6 +2,7 @@
 # from wtforms import StringField, PasswordField, SubmitField, BooleanField
 # from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
 # from flaskr import db
+from flask.app import Flask
 from flask_wtf import FlaskForm 
 from wtforms import StringField, PasswordField,SubmitField, BooleanField, validators
 from flaskr.db import get_db
@@ -16,11 +17,14 @@ class RegistrationForm(FlaskForm):
 
     password = PasswordField('Password', [
         validators.DataRequired(),
-        validators.EqualTo('confirm_password', message="Passwords must match")
+        validators.EqualTo('confirm_password', message="Passwords must match"),
         #TODO:
-        #password policy? symbols/uppercase/lowercase
-        # validators.Regexp(pattern)
-    
+        #PASSWORD POLICY
+        # validators.Regexp(
+        #     "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$",
+        #     message="Password must have minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character"
+        # )
+
     ])
     confirm_password = PasswordField('Confirm Password',[
         validators.DataRequired()
@@ -64,20 +68,26 @@ class LoginForm(FlaskForm):
 
 
 class ChangePassword(FlaskForm):
-    email = StringField('Email', [validators.DataRequired(), validators.Email(), validators.Length(min=8, max=20)])
+    email = RegistrationForm.email
     password = PasswordField('Password', [
+        validators.DataRequired(),    
+    ])
+    new_password = PasswordField('New Password', [
         validators.DataRequired(),
-        validators.EqualTo('Confirm_password', message='Passwords must match')
-        #TODO:
-        #password policy? symbols/uppercase/lowercase
-        # validators.Regexp(pattern)
+        validators.EqualTo('confirm_new_password', message="Passwords must match"),
+        #PASSWORD POLICY
+        # validators.Regexp(
+        #     "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$",
+        #     message="Password must have minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character"
+        # )
     
     ])
-    new_password = PasswordField('New Password')
-    confirm_new_password = PasswordField('Confirm New Password')
+    confirm_new_password = PasswordField('Confirm New Password',[
+        validators.DataRequired()
+    ])
     submit = SubmitField('Change Password')
 
-    def validate_password(self, password):
+    def validate_new_password(self, password):
         upper_count = 0
         letter_count = 0
         numb_count = 0
