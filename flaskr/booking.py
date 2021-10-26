@@ -33,7 +33,8 @@ def booking():
         'rooms': rooms,
         'date': date,
         'today': today,
-        'time': ['08'==time, '10'==time, '12'==time]
+        'time': ['08'==time, '10'==time, '12'==time],
+        'date_str': dateString(date)
     }
     current_app.logger.info('Booking page opened. (booking/booking.html)')
     return render_template('booking/booking.html', **context)
@@ -59,7 +60,7 @@ def confirm(room_id):
         date_time_to = datetime.strptime(to_time, '%Y-%m-%d %H:%M:%S')
 
         if date_time_to < datetime.now():
-            flash(f'You cannot book back in time')
+            flash('You cannot book back in time', "error")
             current_app.logger.warning('User tried to timetravel back in time.')
             return redirect(url_for("index"))
 
@@ -83,14 +84,14 @@ def confirm(room_id):
 
 
         if booking is None:
-            flash(f'You already have a booking')
+            flash(f'You already have a booking', "error")
             current_app.logger.warning('User already has booked a room.')
 
         elif booking['user_id'] == g.user['id']:
-            flash(f'Booking for room {escape(room_number)} confirmed')
+            flash(f'Booking for room {escape(room_number)} confirmed', "info")
             current_app.logger.warning('Room booked.')
         else:
-            flash(f'Room {escape(room_number)} is already booked') 
+            flash(f'Room {escape(room_number)} is already booked', "error") 
             current_app.logger.warning('Room already booked.')
         return redirect(url_for("index"))
     current_app.logger.info('Booking confirm page opened. (booking/confirm.html)')
@@ -98,6 +99,7 @@ def confirm(room_id):
 
 
 @bp.route("/booking/cancel", methods=('POST',))
+@login_required
 def cancel():
     db = get_db()
     booking = db.execute(
@@ -110,9 +112,9 @@ def cancel():
         'DELETE from room_time where id = ?',
         (booking['id'],))
         db.commit()
-        flash('Booking canceled')
+        flash('Booking canceled', "info")
         current_app.logger.warning('Room booking cancelled.')
-        return redirect(url_for('index'))
+        return redirect(url_for('auth.profile'))
 
 
 def get_rooms(date, time):
@@ -145,3 +147,9 @@ def get_room(id):
     if room_number is None:
         abort(404)
     return room_number['room_number']  
+
+def dateString(date):
+    if date is not None:
+        date = datetime.strptime(date, '%Y-%m-%d')
+        return  datetime.strftime(date, '%d %B %Y')
+    return date

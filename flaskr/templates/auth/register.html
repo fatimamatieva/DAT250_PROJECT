@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
-{% block title %}Register{% endblock %}
+{% block title %}Sign Up{% endblock %}
 {% block content %}
 
 {% if form.errors.items()%}
-<div class="flash error">
+<div class="flash error form">
     {% for field, errors in form.errors.items() %}
         <div class="error-message">
             
@@ -12,7 +12,6 @@
     {% endfor %}
 </div>
 {%endif%}
-
 
     <div class="content-section">
 

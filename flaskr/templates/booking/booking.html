@@ -1,18 +1,18 @@
 {% extends 'base.html' %}
 
 {% block header %}
-  <h1>{% block title %}Reservation{% endblock %}</h1>
+  <h1>{% block title %}Booking{% endblock %}</h1>
 
 {% endblock %}
 
 
-{% block head %}
-
-<!-- <script  src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
-<!-- <script  src="{{ url_for('static', filename='jquery.min.js') }}"></script> -->
-<!-- <script  type="text/javascript" src="{{url_for('static', filename='../../static/booking.js') }}"></script> -->
-{% endblock %}
-
+{% if time[0] %} 
+  {% set time_str = '08:00 - 10:00' %}
+{% elif time[1] %}
+  {% set time_str = '10:00 - 12:00' %}
+{% elif time[2 ] %}
+  {% set time_str = '12:00 - 14:00' %}
+{% endif %}
 
 {% block content %}
 <form method="post" id="bookingForm">
@@ -28,33 +28,24 @@
   min="{{today}}">
 
   <label for="selectedTime">Time</label>
-  <select readonly name="time" id="selectedTime">
-    <option readonly {% if time[0] %}selected  {% endif %}  value="08">08:00 - 10:00</option>
-    <option readonly {% if time[1] %}selected  {% endif %}  value="10">10:00 - 12:00</option>
-    <option readonly {% if time[2] %}selected  {% endif %} value="12">12:00 - 14:00</option>
+  <select name="time" id="selectedTime">
+    <option {% if time[0] %}selected  {% endif %}  value="08">08:00 - 10:00</option>
+    <option {% if time[1] %}selected  {% endif %}  value="10">10:00 - 12:00</option>
+    <option {% if time[2] %}selected  {% endif %} value="12">12:00 - 14:00</option>
   </select>
   
   <input type="submit" value="Show Avaliable Rooms">
 </form>
 <hr>
+
+<p class="booking-info flash">
+  {{date_str}} {{time_str}}
+</p>
 {% for room in rooms %}
   <a class="confirm" href="{{url_for('booking.confirm', room_id=room['id'])}}">
     <p>Room {{room['room_number']}}</p>
-    <p>{{date}}</p>
-    {% if time[0] %} 
-      <p>
-        08:00 - 10:00
-      </p>
-    {% elif time[1] %}
-    <p>
-      10:00 - 12:00
-    </p>
-    {% elif time[2 ] %}
-    <p>
-      12:00 - 14:00
-    </p>
-
-    {% endif %}
+    <p class="extra-info">{{date_str}}</p>
+    <p class="extra-info">{{time_str}}</p>
     <p>Book room ></p>
   </a>
 

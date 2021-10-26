@@ -11,6 +11,7 @@ from flaskr.db import get_db
 
 bp = Blueprint('auth', __name__, url_prefix='/auth')
 from .forms import *
+from datetime import datetime
 
 @bp.route('/register', methods=('GET', 'POST'))
 def register():
@@ -66,7 +67,11 @@ def profile():
         ' join room r on t.room_id = r.id'
         ' where t.user_id = ? and t.to_time > datetime()',
         (g.user['id'],)).fetchone() 
-
+    if booking is not None:
+        date_string = dateString(booking['from_time'])
+    else:
+        date_string = None
+    
     form = ChangePassword(request.form)
     if request.method == 'POST' and form.validate():
         username = form.email.data
@@ -97,7 +102,7 @@ def profile():
             badge_list=badge_list)
 
     current_app.logger.info('Profile page opened. (auth/profile.html)')
-    return render_template('auth/profile.html', booking=booking)
+    return render_template('auth/profile.html', booking=booking, date=date_string)
     
     
 
@@ -131,3 +136,8 @@ def login_required(view):
 
     return wrapped_view
 
+def dateString(date):
+    if date is not None:
+        date = datetime.strptime(date, '%Y-%m-%d %H:%M:%S')
+        return  datetime.strftime(date, '%A %d %B %Y')
+    return date

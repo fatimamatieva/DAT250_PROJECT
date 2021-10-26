@@ -98,6 +98,7 @@ nav ul li a, nav ul li span, header .action {
 	margin-left: auto;
 	margin-right: auto;
 }
+
 .content:last-child {
 	margin-bottom: 0;
 }
@@ -107,9 +108,8 @@ nav ul li a, nav ul li span, header .action {
 	flex-direction: column;
 	max-width: 20rem !important;
 }
-fieldset, .flash.error {
-	width: 50%;
-	width: clamp(100px, 50%, 400px);
+fieldset, .flash.error.form {
+	width: clamp(350px, 50%, 100%);
 }
 .content-section,.signin-redirect{
 	margin-top: 1rem;
@@ -228,8 +228,19 @@ details{
 	position: absolute;
 	z-index:0;
 }
+.booking-info{
+	display: none;
+}
 @media (max-width:1060px) {
     .logo {
         display: none;
     }
+}
+@media (max-width:600px) {
+	.extra-info{
+		display: none;
+	}
+	.booking-info{
+		display: block;
+	}
 }

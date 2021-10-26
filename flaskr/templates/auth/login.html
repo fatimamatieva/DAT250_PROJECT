@@ -3,7 +3,7 @@
 {% block content %}
 
 {% if form.errors.items()%}
-<div class="flash error">
+<div class="flash error form">
     {% for field, errors in form.errors.items() %}
         <div class="error-message">
             
