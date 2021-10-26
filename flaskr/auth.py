@@ -89,6 +89,12 @@ def profile():
         if form.validate_on_submit():
             if user(form.password):
                 user.password = form.new_password.data
+
+                if check_password_hash(g.user['password'], old_password):
+                    db.execute(
+                    "UPDATE user set password = ? where id = ? ",
+                    (generate_password_hash(new_password),g.user['id']),)
+
                 db.session.add(user)
                 db.session.commit()
                 flash('Your password has been updated.')
