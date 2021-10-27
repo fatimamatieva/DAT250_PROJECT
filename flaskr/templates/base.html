@@ -29,7 +29,7 @@
         {% if g.user %}
 
           <li class="mr-auto">
-            <a title="Profile" href="{{ url_for('auth.profile') }}">Profile</a>
+            <a title="Profile" href="{{ url_for('booking.profile') }}">Profile</a>
           </li>
 
           <li>
@@ -59,7 +59,7 @@
         {% if messages %}
           {% for category, message in messages %}
 
-            <div class="flash {{category}}">{{ message }}</div>
+            <div class="{{category}}">{{ message }}</div>
           {% endfor %}
         {% endif %}
       {% endwith %}

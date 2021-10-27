@@ -2,7 +2,6 @@
 # from wtforms import StringField, PasswordField, SubmitField, BooleanField
 # from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
 # from flaskr import db
-from flask.app import Flask
 from flask_wtf import FlaskForm 
 from wtforms import StringField, PasswordField,SubmitField, BooleanField, validators
 from flaskr.db import get_db
@@ -10,13 +9,13 @@ from flaskr.db import get_db
         
 class RegistrationForm(FlaskForm):
     email = StringField('Email', [
-        validators.DataRequired(), 
-        # validators.Email(), 
+        validators.DataRequired(message="Email is required"), 
+        validators.Email(), 
         validators.Regexp('.*(@uis\.no)$', message="Invalid email. Use your student email")
     ])
 
     password = PasswordField('Password', [
-        validators.DataRequired(),
+        validators.DataRequired(message="Password is required"),
         validators.EqualTo('confirm_password', message="Passwords must match"),
         #TODO:
         #PASSWORD POLICY
@@ -27,7 +26,7 @@ class RegistrationForm(FlaskForm):
 
     ])
     confirm_password = PasswordField('Confirm Password',[
-        validators.DataRequired()
+        validators.DataRequired(message="Confirm password is required")
     ])
     submit = SubmitField('Register')
 
@@ -50,7 +49,6 @@ class RegistrationForm(FlaskForm):
             raise ValueError('The password must have at least one number and one upper case letter')
 
     def validate_email(self, email):
-        print(email.data)
         db = get_db()
 
         user = db.execute(
@@ -61,19 +59,23 @@ class RegistrationForm(FlaskForm):
 
 
 class LoginForm(FlaskForm):
-    email = StringField('Email', [validators.DataRequired(), validators.Email()])
-    password = PasswordField('Password', [validators.DataRequired()])
-    remember = BooleanField('Remember Me')
+    email = StringField('Email', [
+        validators.DataRequired(message="Email is required"), 
+        validators.Email(message="Incorrect username or password."), 
+        validators.Regexp('.*(@uis\.no)$', message="Incorrect username or password.")
+    ])
+
+    password = PasswordField('Password', [validators.DataRequired(message="Password is required")])
+    # remember = BooleanField('Remember Me')
     submit = SubmitField('Login')
 
 
 class ChangePassword(FlaskForm):
-    email = RegistrationForm.email
     password = PasswordField('Password', [
-        validators.DataRequired(),    
+        validators.DataRequired(message="Password is required"),    
     ])
     new_password = PasswordField('New Password', [
-        validators.DataRequired(),
+        validators.DataRequired(message="New Password is required"),
         validators.EqualTo('confirm_new_password', message="Passwords must match"),
         #PASSWORD POLICY
         # validators.Regexp(
@@ -83,16 +85,16 @@ class ChangePassword(FlaskForm):
     
     ])
     confirm_new_password = PasswordField('Confirm New Password',[
-        validators.DataRequired()
+        validators.DataRequired(message="Confirm new password is required")
     ])
     submit = SubmitField('Change Password')
 
-    def validate_new_password(self, password):
+    def validate_new_password(self, new_password):
         upper_count = 0
         letter_count = 0
         numb_count = 0
 
-        for i in password.data:
+        for i in new_password.data:
             if i.isalpha():
                 letter_count += 1
             if i.isdigit():
@@ -104,5 +106,3 @@ class ChangePassword(FlaskForm):
             return True
         else:
             raise ValueError('The password must have at least one number and one upper case letter')
-
-            

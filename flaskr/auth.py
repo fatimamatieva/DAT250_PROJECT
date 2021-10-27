@@ -11,7 +11,6 @@ from flaskr.db import get_db
 
 bp = Blueprint('auth', __name__, url_prefix='/auth')
 from .forms import *
-from datetime import datetime
 
 @bp.route('/register', methods=('GET', 'POST'))
 def register():
@@ -55,66 +54,66 @@ def login():
             return redirect(url_for('index'))
             
 
-        flash(error, 'error')
+        flash(error, 'error form')
     current_app.logger.info('Login page opened. (auth/login.html) IP: ' + str(request.environ['REMOTE_ADDR']))
     return render_template('auth/login.html', form=form)
 
-@bp.route('/profile', methods=('GET', 'POST'))
-def profile():
-    db = get_db()
-    booking = db.execute(
-        'SELECT t.id, t.room_id, r.room_number, substr(t.from_time, 1) from_time, substr(t.to_time, 1) to_time from room_time t'
-        ' join room r on t.room_id = r.id'
-        ' where t.user_id = ? and t.to_time > datetime()',
-        (g.user['id'],)).fetchone() 
-    if booking is not None:
-        date_string = dateString(booking['from_time'])
-    else:
-        date_string = None
+# @bp.route('/profile', methods=('GET', 'POST'))
+# def profile():
+#     db = get_db()
+#     booking = db.execute(
+#         'SELECT t.id, t.room_id, r.room_number, substr(t.from_time, 1) from_time, substr(t.to_time, 1) to_time from room_time t'
+#         ' join room r on t.room_id = r.id'
+#         ' where t.user_id = ? and t.to_time > datetime()',
+#         (g.user['id'],)).fetchone() 
+#     if booking is not None:
+#         date_string = dateString(booking['from_time'])
+#     else:
+#         date_string = None
     
-    form = ChangePassword(request.form)
-    if request.method == 'POST' and form.validate():
-        username = form.email.data
-        password = form.password.data
-        db = get_db()
-        error = None
-        user = db.execute(
-            'SELECT * FROM user WHERE username = ?', (username,)
-        ).fetchone()
+#     form = ChangePassword(request.form)
+#     if request.method == 'POST' and form.validate():
+#         username = form.email.data
+#         password = form.password.data
+#         db = get_db()
+#         error = None
+#         user = db.execute(
+#             'SELECT * FROM user WHERE username = ?', (username,)
+#         ).fetchone()
         
     
 
-    def change_password():
-        old_password=form.password
-        new_password = form.new_password
+#     def change_password():
+#         old_password=form.password
+#         new_password = form.new_password
 
-        badge_list = []
-        if form.validate():
-            if user(form.password):
-                user.password = form.new_password.data
+#         badge_list = []
+#         if form.validate():
+#             if user(form.password):
+#                 user.password = form.new_password.data
 
-                if check_password_hash(g.user['password'], old_password):
-                    db.execute(
-                    "UPDATE user set password = ? where id = ? ",
-                    (generate_password_hash(new_password),g.user['id']),)
-                    db.commit()
+#                 if check_password_hash(g.user['password'], old_password):
+#                     db.execute(
+#                     "UPDATE user set password = ? where id = ? ",
+#                     (generate_password_hash(new_password),g.user['id']),)
+#                     db.commit()
 
-                db.session.add(user)
-                db.session.commit()
-                flash('Your password has been updated.', 'info')
-                current_app.logger.info('Password updated. (auth/profile.html) USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
-                return redirect(url_for('index'))
-            else:
-                flash('Original password is invalid.', 'error')
-                current_app.logger.info('Original password invalid input. (auth/profile.html) USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
-        return render_template(
-            'index',
-            form=form,
-            user=user,
-            badge_list=badge_list)
+#                 db.session.add(user)
+#                 db.session.commit()
+#                 flash('Your password has been updated.', 'info')
+#                 current_app.logger.info('Password updated. (auth/profile.html) USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
+#                 return redirect(url_for('index'))
+#             else:
+#                 flash('Original password is invalid.', 'error')
+#                 current_app.logger.info('Original password invalid input. (auth/profile.html) USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
+#         return render_template(
+#             'index',
+#             form=form,
+#             user=user,
+#             badge_list=badge_list)
 
-    current_app.logger.info('Profile page opened. (auth/profile.html) USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
-    return render_template('auth/profile.html', booking=booking, date=date_string, form=form)    
+#     current_app.logger.info('Profile page opened. (auth/profile.html) USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
+#     return render_template('auth/profile.html', booking=booking, date=date_string, form=form)    
 
 
 
@@ -145,9 +144,3 @@ def login_required(view):
         return view(**kwargs)
 
     return wrapped_view
-
-def dateString(date):
-    if date is not None:
-        date = datetime.strptime(date, '%Y-%m-%d %H:%M:%S')
-        return  datetime.strftime(date, '%A %d %B %Y')
-    return date

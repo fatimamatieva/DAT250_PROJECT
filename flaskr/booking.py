@@ -6,11 +6,13 @@ from flask import (
 from flask import sessions
 from flask.sessions import NullSession
 from werkzeug.exceptions import abort
+from werkzeug.security import check_password_hash, generate_password_hash
 
 from flaskr.auth import login_required
 from flaskr.db import get_db
 
 from datetime import datetime
+from .forms import ChangePassword
 
 bp = Blueprint('booking', __name__)
 
@@ -34,7 +36,7 @@ def booking():
         'date': date,
         'today': today,
         'time': ['08'==time, '10'==time, '12'==time],
-        'date_str': dateString(date)
+        'date_str': dateStringBooking(date)
     }
     current_app.logger.info('Booking page opened. (booking/booking.html) USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
     return render_template('booking/booking.html', **context)
@@ -124,6 +126,41 @@ def cancel():
         return redirect(url_for('auth.profile'))
 
 
+@bp.route('/profile', methods=('GET', 'POST'))
+@login_required
+def profile():
+    db = get_db()
+    booking = db.execute(
+        'SELECT t.id, t.room_id, r.room_number, substr(t.from_time, 1) from_time, substr(t.to_time, 1) to_time from room_time t'
+        ' join room r on t.room_id = r.id'
+        ' where t.user_id = ? and t.to_time > datetime()',
+        (g.user['id'],)).fetchone() 
+    if booking is not None:
+        date_string = dateStringProfile(booking['from_time'])
+    else:
+        date_string = None
+
+    form = ChangePassword(request.form)
+    if request.method == 'POST' and form.validate():
+        db = get_db()
+        old_password=form.password.data
+        print(old_password)
+        new_password=form.new_password.data
+
+        if check_password_hash(g.user['password'], old_password):
+            db.execute(
+            "UPDATE user set password = ? where id = ? ",
+            (generate_password_hash(new_password),g.user['id']),)
+            db.commit()
+            flash('Your password has been updated.', 'info')
+            current_app.logger.info('Password updated. (auth/profile.html) USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
+
+        else:
+            flash('Original password is invalid.', 'error')
+            current_app.logger.info('Original password invalid input. (auth/profile.html) USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
+
+    current_app.logger.info('Profile page opened. (auth/profile.html) USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
+    return render_template('auth/profile.html', booking=booking, date=date_string, form=form)    
 
 
 def get_rooms(date, time):
@@ -157,8 +194,14 @@ def get_room(id):
         abort(404)
     return room_number['room_number']  
 
-def dateString(date):
+def dateStringBooking(date):
     if date is not None:
         date = datetime.strptime(date, '%Y-%m-%d')
         return  datetime.strftime(date, '%d %B %Y')
+    return date
+
+def dateStringProfile(date):
+    if date is not None:
+        date = datetime.strptime(date, '%Y-%m-%d %H:%M:%S')
+        return  datetime.strftime(date, '%A %d %B %Y')
     return date

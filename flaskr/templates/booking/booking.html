@@ -38,9 +38,12 @@
 </form>
 <hr>
 
+{% if date_str%}
 <p class="booking-info flash">
   {{date_str}} {{time_str}}
 </p>
+{% endif %}
+
 {% for room in rooms %}
   <a class="confirm" href="{{url_for('booking.confirm', room_id=room['id'])}}">
     <p>Room {{room['room_number']}}</p>

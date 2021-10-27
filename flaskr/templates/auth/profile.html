@@ -6,10 +6,28 @@
 
 {% block content %}
 <h1>User</h1>
-<form method="POST" action="">
+<form>
+  <label for="email">Email</label>
+  <input disabled="true" id="email" name="email" type="text" value="{{g.user['username']}}">
+</form>
+
+<h1>Change Password</h1>
+
+{% if form.errors.items()%}
+
+    <div class="error">
+        {% for field, errors in form.errors.items() %}
+            <div class="error-message">
+                
+                {{ ', '.join(errors) }}
+            </div>
+        {% endfor %}
+    </div>
+
+{%endif%}
+
+<form method="POST">
   {{ form.csrf_token() }}
-  {{ form.email.label}}
-  {{ form.email (value=g.user['username'], disabled="true")}}
   {{ form.password.label}}
   {{ form.password }}
   {{ form.new_password.label}}
@@ -27,7 +45,7 @@
       Room {{booking['room_number']}}
   </summary>
   <p> {{date}} </p>
-  <p> Time: {{ booking['from_time'].split(' ')[1] }} - {{booking['to_time'].split(' ')[1]}}</p>
+  <p> Time: {{ booking['from_time'].split(' ')[1][:5] }} - {{booking['to_time'].split(' ')[1][:5]}}</p>
 
   <p>Would you like to cancel your booking?</p>
   <form  action="{{url_for('booking.cancel')}}" method="post">
