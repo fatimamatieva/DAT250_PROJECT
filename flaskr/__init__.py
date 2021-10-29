@@ -69,7 +69,7 @@ def create_app(test_config=None):
     app.register_blueprint(booking.bp)
     app.add_url_rule('/', endpoint='index')
     cwd = os.getcwd()
-    app.run(ssl_context=(cwd+'\cert.pem', cwd+'\key.pem'))
+    app.run(host='0.0.0.0', port=5000, ssl_context=(cwd+'\cert.pem', cwd+'\key.pem'))
 
     return app
        

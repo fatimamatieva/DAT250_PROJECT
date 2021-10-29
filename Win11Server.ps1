@@ -5,7 +5,7 @@ Start-Transcript -path log.txt -append
 
 while (1) {
 venv\Scripts\activate
-py -m waitress --listen=*:5000 --url-scheme=https 'wsgi:app'
+py -m waitress 'wsgi:app'
 }
 
 $ErrorActionPreference="SilentlyContinue"
