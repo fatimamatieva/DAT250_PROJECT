@@ -5,9 +5,7 @@ Start-Transcript -path log.txt -append
 
 while (1) {
 venv\Scripts\activate
-$env:FLASK_APP = "flaskr"
-$env:FLASK_ENV = "development"
-py -m flask run
+waitress-serve 'wsgi:app'
 }
 
 $ErrorActionPreference="SilentlyContinue"

@@ -1,0 +1,4955 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20211029035134
+Username: Mercury\Merc
+RunAs User: Mercury\Merc
+Configuration Name: 
+Machine: MERCURY (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\GIT\DAT250\Win11AutoRun&Log - Server.ps1'
+Process ID: 17804
+PSVersion: 5.1.22000.282
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.282
+BuildVersion: 10.0.22000.282
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is log.txt
+
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> $global:?
+False
+**********************
+Windows PowerShell transcript end
+End time: 20211029035137
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20211029035258
+Username: Mercury\Merc
+RunAs User: Mercury\Merc
+Configuration Name: 
+Machine: MERCURY (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\GIT\DAT250\Win11AutoRun&Log - Server.ps1'
+Process ID: 7624
+PSVersion: 5.1.22000.282
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.282
+BuildVersion: 10.0.22000.282
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is log.txt
+**********************
+Windows PowerShell transcript start
+Start time: 20211029035804
+Username: Mercury\Merc
+RunAs User: Mercury\Merc
+Configuration Name: 
+Machine: MERCURY (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\GIT\DAT250\Win11AutoRun&Log - Server.ps1'
+Process ID: 11480
+PSVersion: 5.1.22000.282
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.282
+BuildVersion: 10.0.22000.282
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is log.txt
+**********************
+Windows PowerShell transcript start
+Start time: 20211029040112
+Username: Mercury\Merc
+RunAs User: Mercury\Merc
+Configuration Name: 
+Machine: MERCURY (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\GIT\DAT250\Win11AutoRun&Log - Server.ps1'
+Process ID: 8200
+PSVersion: 5.1.22000.282
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.282
+BuildVersion: 10.0.22000.282
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is log.txt
+**********************
+Windows PowerShell transcript start
+Start time: 20211029040214
+Username: Mercury\Merc
+RunAs User: Mercury\Merc
+Configuration Name: 
+Machine: MERCURY (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\GIT\DAT250\Win11AutoRun&Log - Server.ps1'
+Process ID: 8500
+PSVersion: 5.1.22000.282
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.282
+BuildVersion: 10.0.22000.282
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is log.txt
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20211029040720
+Username: Mercury\Merc
+RunAs User: Mercury\Merc
+Configuration Name: 
+Machine: MERCURY (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\GIT\DAT250\Win11AutoRun&Log - Server.ps1'
+Process ID: 17688
+PSVersion: 5.1.22000.282
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.282
+BuildVersion: 10.0.22000.282
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is log.txt
+**********************
+Windows PowerShell transcript start
+Start time: 20211029040733
+Username: Mercury\Merc
+RunAs User: Mercury\Merc
+Configuration Name: 
+Machine: MERCURY (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\GIT\DAT250\Win11AutoRun&Log - Server.ps1'
+Process ID: 7628
+PSVersion: 5.1.22000.282
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.282
+BuildVersion: 10.0.22000.282
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is log.txt
+**********************
+Windows PowerShell transcript start
+Start time: 20211029041157
+Username: Mercury\Merc
+RunAs User: Mercury\Merc
+Configuration Name: 
+Machine: MERCURY (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\GIT\DAT250\Win11AutoRun&Log - Server.ps1'
+Process ID: 10480
+PSVersion: 5.1.22000.282
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.282
+BuildVersion: 10.0.22000.282
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is log.txt
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Program Files\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\GIT\DAT250\venv\Scripts\waitress-serve.exe\__main__.py", line 7, in <module>
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\runner.py", line 298, in run
+    _serve(app, **kw)
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\__init__.py", line 13, in serve
+    server = _server(app, **kw)
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\server.py", line 45, in create_server
+    raise ValueError(
+ValueError: The "app" passed to ``create_server`` was ``None``.  You forgot to return a WSGI app within your application
+.
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Program Files\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\GIT\DAT250\venv\Scripts\waitress-serve.exe\__main__.py", line 7, in <module>
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\runner.py", line 298, in run
+    _serve(app, **kw)
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\__init__.py", line 13, in serve
+    server = _server(app, **kw)
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\server.py", line 45, in create_server
+    raise ValueError(
+ValueError: The "app" passed to ``create_server`` was ``None``.  You forgot to return a WSGI app within your application
+.
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Program Files\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\GIT\DAT250\venv\Scripts\waitress-serve.exe\__main__.py", line 7, in <module>
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\runner.py", line 298, in run
+    _serve(app, **kw)
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\__init__.py", line 13, in serve
+    server = _server(app, **kw)
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\server.py", line 45, in create_server
+    raise ValueError(
+ValueError: The "app" passed to ``create_server`` was ``None``.  You forgot to return a WSGI app within your application
+.
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Program Files\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\GIT\DAT250\venv\Scripts\waitress-serve.exe\__main__.py", line 7, in <module>
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\runner.py", line 298, in run
+    _serve(app, **kw)
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\__init__.py", line 13, in serve
+    server = _server(app, **kw)
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\server.py", line 45, in create_server
+    raise ValueError(
+ValueError: The "app" passed to ``create_server`` was ``None``.  You forgot to return a WSGI app within your application
+.
+    exec(code, run_globals)
+  File "C:\GIT\DAT250\venv\Scripts\waitress-serve.exe\__main__.py", line 7, in <module>
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\runner.py", line 298, in run
+    _serve(app, **kw)
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\__init__.py", line 13, in serve
+    server = _server(app, **kw)
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\server.py", line 45, in create_server
+    raise ValueError(
+ValueError: The "app" passed to ``create_server`` was ``None``.  You forgot to return a WSGI app within your application.
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Program Files\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\GIT\DAT250\venv\Scripts\waitress-serve.exe\__main__.py", line 7, in <module>
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\runner.py", line 298, in run
+    _serve(app, **kw)
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\__init__.py", line 13, in serve
+    server = _server(app, **kw)
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\server.py", line 45, in create_server
+    raise ValueError(
+ValueError: The "app" passed to ``create_server`` was ``None``.  You forgot to return a WSGI app within your application.
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Program Files\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\GIT\DAT250\venv\Scripts\waitress-serve.exe\__main__.py", line 7, in <module>
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\runner.py", line 298, in run
+    _serve(app, **kw)
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\__init__.py", line 13, in serve
+    server = _server(app, **kw)
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\server.py", line 45, in create_server
+    raise ValueError(
+ValueError: The "app" passed to ``create_server`` was ``None``.  You forgot to return a WSGI app within your application.
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Program Files\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\GIT\DAT250\venv\Scripts\waitress-serve.exe\__main__.py", line 7, in <module>
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\runner.py", line 298, in run
+    _serve(app, **kw)
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\__init__.py", line 13, in serve
+    server = _server(app, **kw)
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\server.py", line 45, in create_server
+    raise ValueError(
+ValueError: The "app" passed to ``create_server`` was ``None``.  You forgot to return a WSGI app within your application.
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Program Files\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\GIT\DAT250\venv\Scripts\waitress-serve.exe\__main__.py", line 7, in <module>
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\runner.py", line 298, in run
+    _serve(app, **kw)
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\__init__.py", line 13, in serve
+    server = _server(app, **kw)
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\server.py", line 45, in create_server
+    raise ValueError(
+ValueError: The "app" passed to ``create_server`` was ``None``.  You forgot to return a WSGI app within your application.
+**********************
+Windows PowerShell transcript start
+Start time: 20211029041423
+Username: Mercury\Merc
+RunAs User: Mercury\Merc
+Configuration Name: 
+Machine: MERCURY (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\GIT\DAT250\Win11AutoRun&Log - Server.ps1'
+Process ID: 2876
+PSVersion: 5.1.22000.282
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.282
+BuildVersion: 10.0.22000.282
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is log.txt
+Error: Bad module 'wsgi'
+
+Usage:
+
+    waitress-serve [OPTS] MODULE:OBJECT
+
+Standard options:
+
+    --help
+        Show this information.
+
+    --call
+        Call the given object to get the WSGI application.
+
+    --host=ADDR
+        Hostname or IP address on which to listen, default is '0.0.0.0',
+        which means "all IP addresses on this host".
+
+        Note: May not be used together with --listen
+
+    --port=PORT
+        TCP port on which to listen, default is '8080'
+
+        Note: May not be used together with --listen
+
+    --listen=ip:port
+        Tell waitress to listen on an ip port combination.
+
+        Example:
+
+            --listen=127.0.0.1:8080
+            --listen=[::1]:8080
+            --listen=*:8080
+
+        This option may be used multiple times to listen on multiple sockets.
+        A wildcard for the hostname is also supported and will bind to both
+        IPv4/IPv6 depending on whether they are enabled or disabled.
+
+    --[no-]ipv4
+        Toggle on/off IPv4 support.
+
+        Example:
+
+            --no-ipv4
+
+        This will disable IPv4 socket support. This affects wildcard matching
+        when generating the list of sockets.
+
+    --[no-]ipv6
+        Toggle on/off IPv6 support.
+
+        Example:
+
+            --no-ipv6
+
+        This will turn on IPv6 socket support. This affects wildcard matching
+        when generating a list of sockets.
+
+    --unix-socket=PATH
+        Path of Unix socket. If a socket path is specified, a Unix domain
+        socket is made instead of the usual inet domain socket.
+
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+
+
+There was an exception (ImportError) importing your module.
+
+It had these arguments:
+1. attempted relative import with no known parent package
+Error: Bad module 'wsgi'
+
+Usage:
+
+    waitress-serve [OPTS] MODULE:OBJECT
+
+Standard options:
+
+    --help
+        Show this information.
+
+    --call
+        Call the given object to get the WSGI application.
+
+    --host=ADDR
+        Hostname or IP address on which to listen, default is '0.0.0.0',
+        which means "all IP addresses on this host".
+
+        Note: May not be used together with --listen
+
+    --port=PORT
+        TCP port on which to listen, default is '8080'
+
+        Note: May not be used together with --listen
+
+    --listen=ip:port
+        Tell waitress to listen on an ip port combination.
+
+        Example:
+
+            --listen=127.0.0.1:8080
+            --listen=[::1]:8080
+            --listen=*:8080
+
+        This option may be used multiple times to listen on multiple sockets.
+        A wildcard for the hostname is also supported and will bind to both
+        IPv4/IPv6 depending on whether they are enabled or disabled.
+
+    --[no-]ipv4
+        Toggle on/off IPv4 support.
+
+        Example:
+
+            --no-ipv4
+
+        This will disable IPv4 socket support. This affects wildcard matching
+        when generating the list of sockets.
+
+    --[no-]ipv6
+        Toggle on/off IPv6 support.
+
+        Example:
+
+            --no-ipv6
+
+        This will turn on IPv6 socket support. This affects wildcard matching
+        when generating a list of sockets.
+
+    --unix-socket=PATH
+        Path of Unix socket. If a socket path is specified, a Unix domain
+        socket is made instead of the usual inet domain socket.
+
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+
+
+There was an exception (ImportError) importing your module.
+
+It had these arguments:
+1. attempted relative import with no known parent package
+Error: Bad module 'wsgi'
+
+Usage:
+
+    waitress-serve [OPTS] MODULE:OBJECT
+
+Standard options:
+
+    --help
+        Show this information.
+
+    --call
+        Call the given object to get the WSGI application.
+
+    --host=ADDR
+        Hostname or IP address on which to listen, default is '0.0.0.0',
+        which means "all IP addresses on this host".
+
+        Note: May not be used together with --listen
+
+    --port=PORT
+        TCP port on which to listen, default is '8080'
+
+        Note: May not be used together with --listen
+
+    --listen=ip:port
+        Tell waitress to listen on an ip port combination.
+
+        Example:
+
+            --listen=127.0.0.1:8080
+            --listen=[::1]:8080
+            --listen=*:8080
+
+        This option may be used multiple times to listen on multiple sockets.
+        A wildcard for the hostname is also supported and will bind to both
+        IPv4/IPv6 depending on whether they are enabled or disabled.
+
+    --[no-]ipv4
+        Toggle on/off IPv4 support.
+
+        Example:
+
+            --no-ipv4
+
+        This will disable IPv4 socket support. This affects wildcard matching
+        when generating the list of sockets.
+
+    --[no-]ipv6
+        Toggle on/off IPv6 support.
+
+        Example:
+
+            --no-ipv6
+
+        This will turn on IPv6 socket support. This affects wildcard matching
+        when generating a list of sockets.
+
+    --unix-socket=PATH
+        Path of Unix socket. If a socket path is specified, a Unix domain
+        socket is made instead of the usual inet domain socket.
+
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+
+
+There was an exception (ImportError) importing your module.
+
+It had these arguments:
+1. attempted relative import with no known parent package
+Error: Bad module 'wsgi'
+
+Usage:
+
+    waitress-serve [OPTS] MODULE:OBJECT
+
+Standard options:
+
+    --help
+        Show this information.
+
+    --call
+        Call the given object to get the WSGI application.
+
+    --host=ADDR
+        Hostname or IP address on which to listen, default is '0.0.0.0',
+        which means "all IP addresses on this host".
+
+        Note: May not be used together with --listen
+
+    --port=PORT
+        TCP port on which to listen, default is '8080'
+
+        Note: May not be used together with --listen
+
+    --listen=ip:port
+        Tell waitress to listen on an ip port combination.
+
+        Example:
+
+            --listen=127.0.0.1:8080
+            --listen=[::1]:8080
+            --listen=*:8080
+
+        This option may be used multiple times to listen on multiple sockets.
+        A wildcard for the hostname is also supported and will bind to both
+        IPv4/IPv6 depending on whether they are enabled or disabled.
+
+    --[no-]ipv4
+        Toggle on/off IPv4 support.
+
+        Example:
+
+            --no-ipv4
+
+        This will disable IPv4 socket support. This affects wildcard matching
+        when generating the list of sockets.
+
+    --[no-]ipv6
+        Toggle on/off IPv6 support.
+
+        Example:
+
+            --no-ipv6
+
+        This will turn on IPv6 socket support. This affects wildcard matching
+        when generating a list of sockets.
+
+    --unix-socket=PATH
+        Path of Unix socket. If a socket path is specified, a Unix domain
+        socket is made instead of the usual inet domain socket.
+
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+
+
+There was an exception (ImportError) importing your module.
+
+It had these arguments:
+1. attempted relative import with no known parent package
+Error: Bad module 'wsgi'
+
+Usage:
+
+    waitress-serve [OPTS] MODULE:OBJECT
+
+Standard options:
+
+    --help
+        Show this information.
+
+    --call
+        Call the given object to get the WSGI application.
+
+    --host=ADDR
+        Hostname or IP address on which to listen, default is '0.0.0.0',
+        which means "all IP addresses on this host".
+
+        Note: May not be used together with --listen
+
+    --port=PORT
+        TCP port on which to listen, default is '8080'
+
+        Note: May not be used together with --listen
+
+    --listen=ip:port
+        Tell waitress to listen on an ip port combination.
+
+        Example:
+
+            --listen=127.0.0.1:8080
+            --listen=[::1]:8080
+            --listen=*:8080
+
+        This option may be used multiple times to listen on multiple sockets.
+        A wildcard for the hostname is also supported and will bind to both
+        IPv4/IPv6 depending on whether they are enabled or disabled.
+
+    --[no-]ipv4
+        Toggle on/off IPv4 support.
+
+        Example:
+
+            --no-ipv4
+
+        This will disable IPv4 socket support. This affects wildcard matching
+        when generating the list of sockets.
+
+    --[no-]ipv6
+        Toggle on/off IPv6 support.
+
+        Example:
+
+            --no-ipv6
+
+        This will turn on IPv6 socket support. This affects wildcard matching
+        when generating a list of sockets.
+
+    --unix-socket=PATH
+        Path of Unix socket. If a socket path is specified, a Unix domain
+        socket is made instead of the usual inet domain socket.
+
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+
+
+There was an exception (ImportError) importing your module.
+
+It had these arguments:
+1. attempted relative import with no known parent package
+Error: Bad module 'wsgi'
+
+Usage:
+
+    waitress-serve [OPTS] MODULE:OBJECT
+
+Standard options:
+
+    --help
+        Show this information.
+
+    --call
+        Call the given object to get the WSGI application.
+
+    --host=ADDR
+        Hostname or IP address on which to listen, default is '0.0.0.0',
+        which means "all IP addresses on this host".
+
+        Note: May not be used together with --listen
+
+    --port=PORT
+        TCP port on which to listen, default is '8080'
+
+        Note: May not be used together with --listen
+
+    --listen=ip:port
+        Tell waitress to listen on an ip port combination.
+
+        Example:
+
+            --listen=127.0.0.1:8080
+            --listen=[::1]:8080
+            --listen=*:8080
+
+        This option may be used multiple times to listen on multiple sockets.
+        A wildcard for the hostname is also supported and will bind to both
+        IPv4/IPv6 depending on whether they are enabled or disabled.
+
+    --[no-]ipv4
+        Toggle on/off IPv4 support.
+
+        Example:
+
+            --no-ipv4
+
+        This will disable IPv4 socket support. This affects wildcard matching
+        when generating the list of sockets.
+
+    --[no-]ipv6
+        Toggle on/off IPv6 support.
+
+        Example:
+
+            --no-ipv6
+
+        This will turn on IPv6 socket support. This affects wildcard matching
+        when generating a list of sockets.
+
+    --unix-socket=PATH
+        Path of Unix socket. If a socket path is specified, a Unix domain
+        socket is made instead of the usual inet domain socket.
+
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+
+
+There was an exception (ImportError) importing your module.
+
+It had these arguments:
+1. attempted relative import with no known parent package
+Error: Bad module 'wsgi'
+
+Usage:
+
+    waitress-serve [OPTS] MODULE:OBJECT
+
+Standard options:
+
+    --help
+        Show this information.
+
+    --call
+        Call the given object to get the WSGI application.
+
+    --host=ADDR
+        Hostname or IP address on which to listen, default is '0.0.0.0',
+        which means "all IP addresses on this host".
+
+        Note: May not be used together with --listen
+
+    --port=PORT
+        TCP port on which to listen, default is '8080'
+
+        Note: May not be used together with --listen
+
+    --listen=ip:port
+        Tell waitress to listen on an ip port combination.
+
+        Example:
+
+            --listen=127.0.0.1:8080
+            --listen=[::1]:8080
+            --listen=*:8080
+
+        This option may be used multiple times to listen on multiple sockets.
+        A wildcard for the hostname is also supported and will bind to both
+        IPv4/IPv6 depending on whether they are enabled or disabled.
+
+    --[no-]ipv4
+        Toggle on/off IPv4 support.
+
+        Example:
+
+            --no-ipv4
+
+        This will disable IPv4 socket support. This affects wildcard matching
+        when generating the list of sockets.
+
+    --[no-]ipv6
+        Toggle on/off IPv6 support.
+
+        Example:
+
+            --no-ipv6
+
+        This will turn on IPv6 socket support. This affects wildcard matching
+        when generating a list of sockets.
+
+    --unix-socket=PATH
+        Path of Unix socket. If a socket path is specified, a Unix domain
+        socket is made instead of the usual inet domain socket.
+
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+
+
+There was an exception (ImportError) importing your module.
+
+It had these arguments:
+1. attempted relative import with no known parent package
+Error: Bad module 'wsgi'
+
+Usage:
+
+    waitress-serve [OPTS] MODULE:OBJECT
+
+Standard options:
+
+    --help
+        Show this information.
+
+    --call
+        Call the given object to get the WSGI application.
+
+    --host=ADDR
+        Hostname or IP address on which to listen, default is '0.0.0.0',
+        which means "all IP addresses on this host".
+
+        Note: May not be used together with --listen
+
+    --port=PORT
+        TCP port on which to listen, default is '8080'
+
+        Note: May not be used together with --listen
+
+    --listen=ip:port
+        Tell waitress to listen on an ip port combination.
+
+        Example:
+
+            --listen=127.0.0.1:8080
+            --listen=[::1]:8080
+            --listen=*:8080
+
+        This option may be used multiple times to listen on multiple sockets.
+        A wildcard for the hostname is also supported and will bind to both
+        IPv4/IPv6 depending on whether they are enabled or disabled.
+
+    --[no-]ipv4
+        Toggle on/off IPv4 support.
+
+        Example:
+
+            --no-ipv4
+
+        This will disable IPv4 socket support. This affects wildcard matching
+        when generating the list of sockets.
+
+    --[no-]ipv6
+        Toggle on/off IPv6 support.
+
+        Example:
+
+            --no-ipv6
+
+        This will turn on IPv6 socket support. This affects wildcard matching
+        when generating a list of sockets.
+
+    --unix-socket=PATH
+        Path of Unix socket. If a socket path is specified, a Unix domain
+        socket is made instead of the usual inet domain socket.
+
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+
+
+There was an exception (ImportError) importing your module.
+
+It had these arguments:
+1. attempted relative import with no known parent package
+Error: Bad module 'wsgi'
+
+Usage:
+
+    waitress-serve [OPTS] MODULE:OBJECT
+
+Standard options:
+
+    --help
+        Show this information.
+
+    --call
+        Call the given object to get the WSGI application.
+
+    --host=ADDR
+        Hostname or IP address on which to listen, default is '0.0.0.0',
+        which means "all IP addresses on this host".
+
+        Note: May not be used together with --listen
+
+    --port=PORT
+        TCP port on which to listen, default is '8080'
+
+        Note: May not be used together with --listen
+
+    --listen=ip:port
+        Tell waitress to listen on an ip port combination.
+
+        Example:
+
+            --listen=127.0.0.1:8080
+            --listen=[::1]:8080
+            --listen=*:8080
+
+        This option may be used multiple times to listen on multiple sockets.
+        A wildcard for the hostname is also supported and will bind to both
+        IPv4/IPv6 depending on whether they are enabled or disabled.
+
+    --[no-]ipv4
+        Toggle on/off IPv4 support.
+
+        Example:
+
+            --no-ipv4
+
+        This will disable IPv4 socket support. This affects wildcard matching
+        when generating the list of sockets.
+
+    --[no-]ipv6
+        Toggle on/off IPv6 support.
+
+        Example:
+
+            --no-ipv6
+
+        This will turn on IPv6 socket support. This affects wildcard matching
+        when generating a list of sockets.
+
+    --unix-socket=PATH
+        Path of Unix socket. If a socket path is specified, a Unix domain
+        socket is made instead of the usual inet domain socket.
+
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+
+
+There was an exception (ImportError) importing your module.
+
+It had these arguments:
+1. attempted relative import with no known parent package
+
+**********************
+Windows PowerShell transcript start
+Start time: 20211029041435
+Username: Mercury\Merc
+RunAs User: Mercury\Merc
+Configuration Name: 
+Machine: MERCURY (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\GIT\DAT250\Win11AutoRun&Log - Server.ps1'
+Process ID: 16760
+PSVersion: 5.1.22000.282
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.282
+BuildVersion: 10.0.22000.282
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is log.txt
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Program Files\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\GIT\DAT250\venv\Scripts\waitress-serve.exe\__main__.py", line 7, in <module>
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\runner.py", line 298, in run
+    _serve(app, **kw)
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\__init__.py", line 13, in serve
+    server = _server(app, **kw)
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\server.py", line 45, in create_server
+    raise ValueError(
+ValueError: The "app" passed to ``create_server`` was ``None``.  You forgot to return a WSGI app within your application
+.
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Program Files\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\GIT\DAT250\venv\Scripts\waitress-serve.exe\__main__.py", line 7, in <module>
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\runner.py", line 298, in run
+    _serve(app, **kw)
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\__init__.py", line 13, in serve
+    server = _server(app, **kw)
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\server.py", line 45, in create_server
+    raise ValueError(
+ValueError: The "app" passed to ``create_server`` was ``None``.  You forgot to return a WSGI app within your application
+.
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Program Files\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\GIT\DAT250\venv\Scripts\waitress-serve.exe\__main__.py", line 7, in <module>
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\runner.py", line 298, in run
+    _serve(app, **kw)
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\__init__.py", line 13, in serve
+    server = _server(app, **kw)
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\server.py", line 45, in create_server
+    raise ValueError(
+ValueError: The "app" passed to ``create_server`` was ``None``.  You forgot to return a WSGI app within your application
+.
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Program Files\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\GIT\DAT250\venv\Scripts\waitress-serve.exe\__main__.py", line 7, in <module>
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\runner.py", line 298, in run
+    _serve(app, **kw)
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\__init__.py", line 13, in serve
+    server = _server(app, **kw)
+  File "C:\GIT\DAT250\venv\lib\site-packages\waitress\server.py", line 45, in create_server
+    raise ValueError(
+ValueError: The "app" passed to ``create_server`` was ``None``.  You forgot to return a WSGI app within your application
+.
+
+**********************
+Windows PowerShell transcript start
+Start time: 20211029041513
+Username: Mercury\Merc
+RunAs User: Mercury\Merc
+Configuration Name: 
+Machine: MERCURY (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\GIT\DAT250\Win11AutoRun&Log - Server.ps1'
+Process ID: 13972
+PSVersion: 5.1.22000.282
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.282
+BuildVersion: 10.0.22000.282
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is log.txt
+
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> $global:?
+False
+**********************
+Windows PowerShell transcript end
+End time: 20211029041554
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20211029041743
+Username: Mercury\Merc
+RunAs User: Mercury\Merc
+Configuration Name: 
+Machine: MERCURY (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\GIT\DAT250\Win11AutoRun&Log - Server.ps1'
+Process ID: 10076
+PSVersion: 5.1.22000.282
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.282
+BuildVersion: 10.0.22000.282
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is log.txt
+**********************
+Windows PowerShell transcript start
+Start time: 20211029041804
+Username: Mercury\Merc
+RunAs User: Mercury\Merc
+Configuration Name: 
+Machine: MERCURY (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\GIT\DAT250\Win11AutoRun&Log - Server.ps1'
+Process ID: 16524
+PSVersion: 5.1.22000.282
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.282
+BuildVersion: 10.0.22000.282
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is log.txt
+**********************
+Windows PowerShell transcript start
+Start time: 20211029042047
+Username: Mercury\Merc
+RunAs User: Mercury\Merc
+Configuration Name: 
+Machine: MERCURY (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\GIT\DAT250\Win11AutoRun&Log - Server.ps1'
+Process ID: 4972
+PSVersion: 5.1.22000.282
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.282
+BuildVersion: 10.0.22000.282
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is log.txt
+**********************
+Windows PowerShell transcript start
+Start time: 20211029042214
+Username: Mercury\Merc
+RunAs User: Mercury\Merc
+Configuration Name: 
+Machine: MERCURY (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\GIT\DAT250\Win11Server.ps1'
+Process ID: 10264
+PSVersion: 5.1.22000.282
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.282
+BuildVersion: 10.0.22000.282
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is log.txt
+**********************
+Windows PowerShell transcript start
+Start time: 20211029042239
+Username: Mercury\Merc
+RunAs User: Mercury\Merc
+Configuration Name: 
+Machine: MERCURY (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\GIT\DAT250\Win11Server.ps1'
+Process ID: 16952
+PSVersion: 5.1.22000.282
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.282
+BuildVersion: 10.0.22000.282
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is log.txt
+**********************
+Windows PowerShell transcript start
+Start time: 20211029042305
+Username: Mercury\Merc
+RunAs User: Mercury\Merc
+Configuration Name: 
+Machine: MERCURY (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\GIT\DAT250\Win11Server.ps1'
+Process ID: 1724
+PSVersion: 5.1.22000.282
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.282
+BuildVersion: 10.0.22000.282
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is log.txt
+Error: option -w not recognized
+
+Usage:
+
+    waitress-serve [OPTS] MODULE:OBJECT
+
+Standard options:
+
+    --help
+        Show this information.
+
+    --call
+        Call the given object to get the WSGI application.
+
+    --host=ADDR
+        Hostname or IP address on which to listen, default is '0.0.0.0',
+        which means "all IP addresses on this host".
+
+        Note: May not be used together with --listen
+
+    --port=PORT
+        TCP port on which to listen, default is '8080'
+
+        Note: May not be used together with --listen
+
+    --listen=ip:port
+        Tell waitress to listen on an ip port combination.
+
+        Example:
+
+            --listen=127.0.0.1:8080
+            --listen=[::1]:8080
+            --listen=*:8080
+
+        This option may be used multiple times to listen on multiple sockets.
+        A wildcard for the hostname is also supported and will bind to both
+        IPv4/IPv6 depending on whether they are enabled or disabled.
+
+    --[no-]ipv4
+        Toggle on/off IPv4 support.
+
+        Example:
+
+            --no-ipv4
+
+        This will disable IPv4 socket support. This affects wildcard matching
+        when generating the list of sockets.
+
+    --[no-]ipv6
+        Toggle on/off IPv6 support.
+
+        Example:
+
+            --no-ipv6
+
+        This will turn on IPv6 socket support. This affects wildcard matching
+        when generating a list of sockets.
+
+    --unix-socket=PATH
+        Path of Unix socket. If a socket path is specified, a Unix domain
+        socket is made instead of the usual inet domain socket.
+
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+Error: option -w not recognized
+
+Usage:
+
+    waitress-serve [OPTS] MODULE:OBJECT
+
+Standard options:
+
+    --help
+        Show this information.
+
+    --call
+        Call the given object to get the WSGI application.
+
+    --host=ADDR
+        Hostname or IP address on which to listen, default is '0.0.0.0',
+        which means "all IP addresses on this host".
+
+        Note: May not be used together with --listen
+
+    --port=PORT
+        TCP port on which to listen, default is '8080'
+
+        Note: May not be used together with --listen
+
+    --listen=ip:port
+        Tell waitress to listen on an ip port combination.
+
+        Example:
+
+            --listen=127.0.0.1:8080
+            --listen=[::1]:8080
+            --listen=*:8080
+
+        This option may be used multiple times to listen on multiple sockets.
+        A wildcard for the hostname is also supported and will bind to both
+        IPv4/IPv6 depending on whether they are enabled or disabled.
+
+    --[no-]ipv4
+        Toggle on/off IPv4 support.
+
+        Example:
+
+            --no-ipv4
+
+        This will disable IPv4 socket support. This affects wildcard matching
+        when generating the list of sockets.
+
+    --[no-]ipv6
+        Toggle on/off IPv6 support.
+
+        Example:
+
+            --no-ipv6
+
+        This will turn on IPv6 socket support. This affects wildcard matching
+        when generating a list of sockets.
+
+    --unix-socket=PATH
+        Path of Unix socket. If a socket path is specified, a Unix domain
+        socket is made instead of the usual inet domain socket.
+
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+Error: option -w not recognized
+
+Usage:
+
+    waitress-serve [OPTS] MODULE:OBJECT
+
+Standard options:
+
+    --help
+        Show this information.
+
+    --call
+        Call the given object to get the WSGI application.
+
+    --host=ADDR
+        Hostname or IP address on which to listen, default is '0.0.0.0',
+        which means "all IP addresses on this host".
+
+        Note: May not be used together with --listen
+
+    --port=PORT
+        TCP port on which to listen, default is '8080'
+
+        Note: May not be used together with --listen
+
+    --listen=ip:port
+        Tell waitress to listen on an ip port combination.
+
+        Example:
+
+            --listen=127.0.0.1:8080
+            --listen=[::1]:8080
+            --listen=*:8080
+
+        This option may be used multiple times to listen on multiple sockets.
+        A wildcard for the hostname is also supported and will bind to both
+        IPv4/IPv6 depending on whether they are enabled or disabled.
+
+    --[no-]ipv4
+        Toggle on/off IPv4 support.
+
+        Example:
+
+            --no-ipv4
+
+        This will disable IPv4 socket support. This affects wildcard matching
+        when generating the list of sockets.
+
+    --[no-]ipv6
+        Toggle on/off IPv6 support.
+
+        Example:
+
+            --no-ipv6
+
+        This will turn on IPv6 socket support. This affects wildcard matching
+        when generating a list of sockets.
+
+    --unix-socket=PATH
+        Path of Unix socket. If a socket path is specified, a Unix domain
+        socket is made instead of the usual inet domain socket.
+
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+Error: option -w not recognized
+
+Usage:
+
+    waitress-serve [OPTS] MODULE:OBJECT
+
+Standard options:
+
+    --help
+        Show this information.
+
+    --call
+        Call the given object to get the WSGI application.
+
+    --host=ADDR
+        Hostname or IP address on which to listen, default is '0.0.0.0',
+        which means "all IP addresses on this host".
+
+        Note: May not be used together with --listen
+
+    --port=PORT
+        TCP port on which to listen, default is '8080'
+
+        Note: May not be used together with --listen
+
+    --listen=ip:port
+        Tell waitress to listen on an ip port combination.
+
+        Example:
+
+            --listen=127.0.0.1:8080
+            --listen=[::1]:8080
+            --listen=*:8080
+
+        This option may be used multiple times to listen on multiple sockets.
+        A wildcard for the hostname is also supported and will bind to both
+        IPv4/IPv6 depending on whether they are enabled or disabled.
+
+    --[no-]ipv4
+        Toggle on/off IPv4 support.
+
+        Example:
+
+            --no-ipv4
+
+        This will disable IPv4 socket support. This affects wildcard matching
+        when generating the list of sockets.
+
+    --[no-]ipv6
+        Toggle on/off IPv6 support.
+
+        Example:
+
+            --no-ipv6
+
+        This will turn on IPv6 socket support. This affects wildcard matching
+        when generating a list of sockets.
+
+    --unix-socket=PATH
+        Path of Unix socket. If a socket path is specified, a Unix domain
+        socket is made instead of the usual inet domain socket.
+
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+Error: option -w not recognized
+
+Usage:
+
+    waitress-serve [OPTS] MODULE:OBJECT
+
+Standard options:
+
+    --help
+        Show this information.
+
+    --call
+        Call the given object to get the WSGI application.
+
+    --host=ADDR
+        Hostname or IP address on which to listen, default is '0.0.0.0',
+        which means "all IP addresses on this host".
+
+        Note: May not be used together with --listen
+
+    --port=PORT
+        TCP port on which to listen, default is '8080'
+
+        Note: May not be used together with --listen
+
+    --listen=ip:port
+        Tell waitress to listen on an ip port combination.
+
+        Example:
+
+            --listen=127.0.0.1:8080
+            --listen=[::1]:8080
+            --listen=*:8080
+
+        This option may be used multiple times to listen on multiple sockets.
+        A wildcard for the hostname is also supported and will bind to both
+        IPv4/IPv6 depending on whether they are enabled or disabled.
+
+    --[no-]ipv4
+        Toggle on/off IPv4 support.
+
+        Example:
+
+            --no-ipv4
+
+        This will disable IPv4 socket support. This affects wildcard matching
+        when generating the list of sockets.
+
+    --[no-]ipv6
+        Toggle on/off IPv6 support.
+
+        Example:
+
+            --no-ipv6
+
+        This will turn on IPv6 socket support. This affects wildcard matching
+        when generating a list of sockets.
+
+    --unix-socket=PATH
+        Path of Unix socket. If a socket path is specified, a Unix domain
+        socket is made instead of the usual inet domain socket.
+
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+Error: option -w not recognized
+
+Usage:
+
+    waitress-serve [OPTS] MODULE:OBJECT
+
+Standard options:
+
+    --help
+        Show this information.
+
+    --call
+        Call the given object to get the WSGI application.
+
+    --host=ADDR
+        Hostname or IP address on which to listen, default is '0.0.0.0',
+        which means "all IP addresses on this host".
+
+        Note: May not be used together with --listen
+
+    --port=PORT
+        TCP port on which to listen, default is '8080'
+
+        Note: May not be used together with --listen
+
+    --listen=ip:port
+        Tell waitress to listen on an ip port combination.
+
+        Example:
+
+            --listen=127.0.0.1:8080
+            --listen=[::1]:8080
+            --listen=*:8080
+
+        This option may be used multiple times to listen on multiple sockets.
+        A wildcard for the hostname is also supported and will bind to both
+        IPv4/IPv6 depending on whether they are enabled or disabled.
+
+    --[no-]ipv4
+        Toggle on/off IPv4 support.
+
+        Example:
+
+            --no-ipv4
+
+        This will disable IPv4 socket support. This affects wildcard matching
+        when generating the list of sockets.
+
+    --[no-]ipv6
+        Toggle on/off IPv6 support.
+
+        Example:
+
+            --no-ipv6
+
+        This will turn on IPv6 socket support. This affects wildcard matching
+        when generating a list of sockets.
+
+    --unix-socket=PATH
+        Path of Unix socket. If a socket path is specified, a Unix domain
+        socket is made instead of the usual inet domain socket.
+
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+Error: option -w not recognized
+
+Usage:
+
+    waitress-serve [OPTS] MODULE:OBJECT
+
+Standard options:
+
+    --help
+        Show this information.
+
+    --call
+        Call the given object to get the WSGI application.
+
+    --host=ADDR
+        Hostname or IP address on which to listen, default is '0.0.0.0',
+        which means "all IP addresses on this host".
+
+        Note: May not be used together with --listen
+
+    --port=PORT
+        TCP port on which to listen, default is '8080'
+
+        Note: May not be used together with --listen
+
+    --listen=ip:port
+        Tell waitress to listen on an ip port combination.
+
+        Example:
+
+            --listen=127.0.0.1:8080
+            --listen=[::1]:8080
+            --listen=*:8080
+
+        This option may be used multiple times to listen on multiple sockets.
+        A wildcard for the hostname is also supported and will bind to both
+        IPv4/IPv6 depending on whether they are enabled or disabled.
+
+    --[no-]ipv4
+        Toggle on/off IPv4 support.
+
+        Example:
+
+            --no-ipv4
+
+        This will disable IPv4 socket support. This affects wildcard matching
+        when generating the list of sockets.
+
+    --[no-]ipv6
+        Toggle on/off IPv6 support.
+
+        Example:
+
+            --no-ipv6
+
+        This will turn on IPv6 socket support. This affects wildcard matching
+        when generating a list of sockets.
+
+    --unix-socket=PATH
+        Path of Unix socket. If a socket path is specified, a Unix domain
+        socket is made instead of the usual inet domain socket.
+
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+Error: option -w not recognized
+
+Usage:
+
+    waitress-serve [OPTS] MODULE:OBJECT
+
+Standard options:
+
+    --help
+        Show this information.
+
+    --call
+        Call the given object to get the WSGI application.
+
+    --host=ADDR
+        Hostname or IP address on which to listen, default is '0.0.0.0',
+        which means "all IP addresses on this host".
+
+        Note: May not be used together with --listen
+
+    --port=PORT
+        TCP port on which to listen, default is '8080'
+
+        Note: May not be used together with --listen
+
+    --listen=ip:port
+        Tell waitress to listen on an ip port combination.
+
+        Example:
+
+            --listen=127.0.0.1:8080
+            --listen=[::1]:8080
+            --listen=*:8080
+
+        This option may be used multiple times to listen on multiple sockets.
+        A wildcard for the hostname is also supported and will bind to both
+        IPv4/IPv6 depending on whether they are enabled or disabled.
+
+    --[no-]ipv4
+        Toggle on/off IPv4 support.
+
+        Example:
+
+            --no-ipv4
+
+        This will disable IPv4 socket support. This affects wildcard matching
+        when generating the list of sockets.
+
+    --[no-]ipv6
+        Toggle on/off IPv6 support.
+
+        Example:
+
+            --no-ipv6
+
+        This will turn on IPv6 socket support. This affects wildcard matching
+        when generating a list of sockets.
+
+    --unix-socket=PATH
+        Path of Unix socket. If a socket path is specified, a Unix domain
+        socket is made instead of the usual inet domain socket.
+
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+Error: option -w not recognized
+
+Usage:
+
+    waitress-serve [OPTS] MODULE:OBJECT
+
+Standard options:
+
+    --help
+        Show this information.
+
+    --call
+        Call the given object to get the WSGI application.
+
+    --host=ADDR
+        Hostname or IP address on which to listen, default is '0.0.0.0',
+        which means "all IP addresses on this host".
+
+        Note: May not be used together with --listen
+
+    --port=PORT
+        TCP port on which to listen, default is '8080'
+
+        Note: May not be used together with --listen
+
+    --listen=ip:port
+        Tell waitress to listen on an ip port combination.
+
+        Example:
+
+            --listen=127.0.0.1:8080
+            --listen=[::1]:8080
+            --listen=*:8080
+
+        This option may be used multiple times to listen on multiple sockets.
+        A wildcard for the hostname is also supported and will bind to both
+        IPv4/IPv6 depending on whether they are enabled or disabled.
+
+    --[no-]ipv4
+        Toggle on/off IPv4 support.
+
+        Example:
+
+            --no-ipv4
+
+        This will disable IPv4 socket support. This affects wildcard matching
+        when generating the list of sockets.
+
+    --[no-]ipv6
+        Toggle on/off IPv6 support.
+
+        Example:
+
+            --no-ipv6
+
+        This will turn on IPv6 socket support. This affects wildcard matching
+        when generating a list of sockets.
+
+    --unix-socket=PATH
+        Path of Unix socket. If a socket path is specified, a Unix domain
+        socket is made instead of the usual inet domain socket.
+
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+Error: option -w not recognized
+
+Usage:
+
+    waitress-serve [OPTS] MODULE:OBJECT
+
+Standard options:
+
+    --help
+        Show this information.
+
+    --call
+        Call the given object to get the WSGI application.
+
+    --host=ADDR
+        Hostname or IP address on which to listen, default is '0.0.0.0',
+        which means "all IP addresses on this host".
+
+        Note: May not be used together with --listen
+
+    --port=PORT
+        TCP port on which to listen, default is '8080'
+
+        Note: May not be used together with --listen
+
+    --listen=ip:port
+        Tell waitress to listen on an ip port combination.
+
+        Example:
+
+            --listen=127.0.0.1:8080
+            --listen=[::1]:8080
+            --listen=*:8080
+
+        This option may be used multiple times to listen on multiple sockets.
+        A wildcard for the hostname is also supported and will bind to both
+        IPv4/IPv6 depending on whether they are enabled or disabled.
+
+    --[no-]ipv4
+        Toggle on/off IPv4 support.
+
+        Example:
+
+            --no-ipv4
+
+        This will disable IPv4 socket support. This affects wildcard matching
+        when generating the list of sockets.
+
+    --[no-]ipv6
+        Toggle on/off IPv6 support.
+
+        Example:
+
+            --no-ipv6
+
+        This will turn on IPv6 socket support. This affects wildcard matching
+        when generating a list of sockets.
+
+    --unix-socket=PATH
+        Path of Unix socket. If a socket path is specified, a Unix domain
+        socket is made instead of the usual inet domain socket.
+
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+Error: option -w not recognized
+
+Usage:
+
+    waitress-serve [OPTS] MODULE:OBJECT
+
+Standard options:
+
+    --help
+        Show this information.
+
+    --call
+        Call the given object to get the WSGI application.
+
+    --host=ADDR
+        Hostname or IP address on which to listen, default is '0.0.0.0',
+        which means "all IP addresses on this host".
+
+        Note: May not be used together with --listen
+
+    --port=PORT
+        TCP port on which to listen, default is '8080'
+
+        Note: May not be used together with --listen
+
+    --listen=ip:port
+        Tell waitress to listen on an ip port combination.
+
+        Example:
+
+            --listen=127.0.0.1:8080
+            --listen=[::1]:8080
+            --listen=*:8080
+
+        This option may be used multiple times to listen on multiple sockets.
+        A wildcard for the hostname is also supported and will bind to both
+        IPv4/IPv6 depending on whether they are enabled or disabled.
+
+    --[no-]ipv4
+        Toggle on/off IPv4 support.
+
+        Example:
+
+            --no-ipv4
+
+        This will disable IPv4 socket support. This affects wildcard matching
+        when generating the list of sockets.
+
+    --[no-]ipv6
+        Toggle on/off IPv6 support.
+
+        Example:
+
+            --no-ipv6
+
+        This will turn on IPv6 socket support. This affects wildcard matching
+        when generating a list of sockets.
+
+    --unix-socket=PATH
+        Path of Unix socket. If a socket path is specified, a Unix domain
+        socket is made instead of the usual inet domain socket.
+
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+Error: option -w not recognized
+
+Usage:
+
+    waitress-serve [OPTS] MODULE:OBJECT
+
+Standard options:
+
+    --help
+        Show this information.
+
+    --call
+        Call the given object to get the WSGI application.
+
+    --host=ADDR
+        Hostname or IP address on which to listen, default is '0.0.0.0',
+        which means "all IP addresses on this host".
+
+        Note: May not be used together with --listen
+
+    --port=PORT
+        TCP port on which to listen, default is '8080'
+
+        Note: May not be used together with --listen
+
+    --listen=ip:port
+        Tell waitress to listen on an ip port combination.
+
+        Example:
+
+            --listen=127.0.0.1:8080
+            --listen=[::1]:8080
+            --listen=*:8080
+
+        This option may be used multiple times to listen on multiple sockets.
+        A wildcard for the hostname is also supported and will bind to both
+        IPv4/IPv6 depending on whether they are enabled or disabled.
+
+    --[no-]ipv4
+        Toggle on/off IPv4 support.
+
+        Example:
+
+            --no-ipv4
+
+        This will disable IPv4 socket support. This affects wildcard matching
+        when generating the list of sockets.
+
+    --[no-]ipv6
+        Toggle on/off IPv6 support.
+
+        Example:
+
+            --no-ipv6
+
+        This will turn on IPv6 socket support. This affects wildcard matching
+        when generating a list of sockets.
+
+    --unix-socket=PATH
+        Path of Unix socket. If a socket path is specified, a Unix domain
+        socket is made instead of the usual inet domain socket.
+
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+Error: option -w not recognized
+
+Usage:
+
+    waitress-serve [OPTS] MODULE:OBJECT
+
+Standard options:
+
+    --help
+        Show this information.
+
+    --call
+        Call the given object to get the WSGI application.
+
+    --host=ADDR
+        Hostname or IP address on which to listen, default is '0.0.0.0',
+        which means "all IP addresses on this host".
+
+        Note: May not be used together with --listen
+
+    --port=PORT
+        TCP port on which to listen, default is '8080'
+
+        Note: May not be used together with --listen
+
+    --listen=ip:port
+        Tell waitress to listen on an ip port combination.
+
+        Example:
+
+            --listen=127.0.0.1:8080
+            --listen=[::1]:8080
+            --listen=*:8080
+
+        This option may be used multiple times to listen on multiple sockets.
+        A wildcard for the hostname is also supported and will bind to both
+        IPv4/IPv6 depending on whether they are enabled or disabled.
+
+    --[no-]ipv4
+        Toggle on/off IPv4 support.
+
+        Example:
+
+            --no-ipv4
+
+        This will disable IPv4 socket support. This affects wildcard matching
+        when generating the list of sockets.
+
+    --[no-]ipv6
+        Toggle on/off IPv6 support.
+
+        Example:
+
+            --no-ipv6
+
+        This will turn on IPv6 socket support. This affects wildcard matching
+        when generating a list of sockets.
+
+    --unix-socket=PATH
+        Path of Unix socket. If a socket path is specified, a Unix domain
+        socket is made instead of the usual inet domain socket.
+
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+Error: option -w not recognized
+
+Usage:
+
+    waitress-serve [OPTS] MODULE:OBJECT
+
+Standard options:
+
+    --help
+        Show this information.
+
+    --call
+        Call the given object to get the WSGI application.
+
+    --host=ADDR
+        Hostname or IP address on which to listen, default is '0.0.0.0',
+        which means "all IP addresses on this host".
+
+        Note: May not be used together with --listen
+
+    --port=PORT
+        TCP port on which to listen, default is '8080'
+
+        Note: May not be used together with --listen
+
+    --listen=ip:port
+        Tell waitress to listen on an ip port combination.
+
+        Example:
+
+            --listen=127.0.0.1:8080
+            --listen=[::1]:8080
+            --listen=*:8080
+
+        This option may be used multiple times to listen on multiple sockets.
+        A wildcard for the hostname is also supported and will bind to both
+        IPv4/IPv6 depending on whether they are enabled or disabled.
+
+    --[no-]ipv4
+        Toggle on/off IPv4 support.
+
+        Example:
+
+            --no-ipv4
+
+        This will disable IPv4 socket support. This affects wildcard matching
+        when generating the list of sockets.
+
+    --[no-]ipv6
+        Toggle on/off IPv6 support.
+
+        Example:
+
+            --no-ipv6
+
+        This will turn on IPv6 socket support. This affects wildcard matching
+        when generating a list of sockets.
+
+    --unix-socket=PATH
+        Path of Unix socket. If a socket path is specified, a Unix domain
+        socket is made instead of the usual inet domain socket.
+
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+Error: option -w not recognized
+
+Usage:
+
+    waitress-serve [OPTS] MODULE:OBJECT
+
+Standard options:
+
+    --help
+        Show this information.
+
+    --call
+        Call the given object to get the WSGI application.
+
+    --host=ADDR
+        Hostname or IP address on which to listen, default is '0.0.0.0',
+        which means "all IP addresses on this host".
+
+        Note: May not be used together with --listen
+
+    --port=PORT
+        TCP port on which to listen, default is '8080'
+
+        Note: May not be used together with --listen
+
+    --listen=ip:port
+        Tell waitress to listen on an ip port combination.
+
+        Example:
+
+            --listen=127.0.0.1:8080
+            --listen=[::1]:8080
+            --listen=*:8080
+
+        This option may be used multiple times to listen on multiple sockets.
+        A wildcard for the hostname is also supported and will bind to both
+        IPv4/IPv6 depending on whether they are enabled or disabled.
+
+    --[no-]ipv4
+        Toggle on/off IPv4 support.
+
+        Example:
+
+            --no-ipv4
+
+        This will disable IPv4 socket support. This affects wildcard matching
+        when generating the list of sockets.
+
+    --[no-]ipv6
+        Toggle on/off IPv6 support.
+
+        Example:
+
+            --no-ipv6
+
+        This will turn on IPv6 socket support. This affects wildcard matching
+        when generating a list of sockets.
+
+    --unix-socket=PATH
+        Path of Unix socket. If a socket path is specified, a Unix domain
+        socket is made instead of the usual inet domain socket.
+
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+Error: option -w not recognized
+
+Usage:
+
+    waitress-serve [OPTS] MODULE:OBJECT
+
+Standard options:
+
+    --help
+        Show this information.
+
+    --call
+        Call the given object to get the WSGI application.
+
+    --host=ADDR
+        Hostname or IP address on which to listen, default is '0.0.0.0',
+        which means "all IP addresses on this host".
+
+        Note: May not be used together with --listen
+
+    --port=PORT
+        TCP port on which to listen, default is '8080'
+
+        Note: May not be used together with --listen
+
+    --listen=ip:port
+        Tell waitress to listen on an ip port combination.
+
+        Example:
+
+            --listen=127.0.0.1:8080
+            --listen=[::1]:8080
+            --listen=*:8080
+
+        This option may be used multiple times to listen on multiple sockets.
+        A wildcard for the hostname is also supported and will bind to both
+        IPv4/IPv6 depending on whether they are enabled or disabled.
+
+    --[no-]ipv4
+        Toggle on/off IPv4 support.
+
+        Example:
+
+            --no-ipv4
+
+        This will disable IPv4 socket support. This affects wildcard matching
+        when generating the list of sockets.
+
+    --[no-]ipv6
+        Toggle on/off IPv6 support.
+
+        Example:
+
+            --no-ipv6
+
+        This will turn on IPv6 socket support. This affects wildcard matching
+        when generating a list of sockets.
+
+    --unix-socket=PATH
+        Path of Unix socket. If a socket path is specified, a Unix domain
+        socket is made instead of the usual inet domain socket.
+
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+Error: option -w not recognized
+
+Usage:
+
+    waitress-serve [OPTS] MODULE:OBJECT
+
+Standard options:
+
+    --help
+        Show this information.
+
+    --call
+        Call the given object to get the WSGI application.
+
+    --host=ADDR
+        Hostname or IP address on which to listen, default is '0.0.0.0',
+        which means "all IP addresses on this host".
+
+        Note: May not be used together with --listen
+
+    --port=PORT
+        TCP port on which to listen, default is '8080'
+
+        Note: May not be used together with --listen
+
+    --listen=ip:port
+        Tell waitress to listen on an ip port combination.
+
+        Example:
+
+            --listen=127.0.0.1:8080
+            --listen=[::1]:8080
+            --listen=*:8080
+
+        This option may be used multiple times to listen on multiple sockets.
+        A wildcard for the hostname is also supported and will bind to both
+        IPv4/IPv6 depending on whether they are enabled or disabled.
+
+    --[no-]ipv4
+        Toggle on/off IPv4 support.
+
+        Example:
+
+            --no-ipv4
+
+        This will disable IPv4 socket support. This affects wildcard matching
+        when generating the list of sockets.
+
+    --[no-]ipv6
+        Toggle on/off IPv6 support.
+
+        Example:
+
+            --no-ipv6
+
+        This will turn on IPv6 socket support. This affects wildcard matching
+        when generating a list of sockets.
+
+    --unix-socket=PATH
+        Path of Unix socket. If a socket path is specified, a Unix domain
+        socket is made instead of the usual inet domain socket.
+
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+Error: option -w not recognized
+
+Usage:
+
+    waitress-serve [OPTS] MODULE:OBJECT
+
+Standard options:
+
+    --help
+        Show this information.
+
+    --call
+        Call the given object to get the WSGI application.
+
+    --host=ADDR
+        Hostname or IP address on which to listen, default is '0.0.0.0',
+        which means "all IP addresses on this host".
+
+        Note: May not be used together with --listen
+
+    --port=PORT
+        TCP port on which to listen, default is '8080'
+
+        Note: May not be used together with --listen
+
+    --listen=ip:port
+        Tell waitress to listen on an ip port combination.
+
+        Example:
+
+            --listen=127.0.0.1:8080
+            --listen=[::1]:8080
+            --listen=*:8080
+
+        This option may be used multiple times to listen on multiple sockets.
+        A wildcard for the hostname is also supported and will bind to both
+        IPv4/IPv6 depending on whether they are enabled or disabled.
+
+    --[no-]ipv4
+        Toggle on/off IPv4 support.
+
+        Example:
+
+            --no-ipv4
+
+        This will disable IPv4 socket support. This affects wildcard matching
+        when generating the list of sockets.
+
+    --[no-]ipv6
+        Toggle on/off IPv6 support.
+
+        Example:
+
+            --no-ipv6
+
+        This will turn on IPv6 socket support. This affects wildcard matching
+        when generating a list of sockets.
+
+    --unix-socket=PATH
+        Path of Unix socket. If a socket path is specified, a Unix domain
+        socket is made instead of the usual inet domain socket.
+
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+Error: option -w not recognized
+
+Usage:
+
+    waitress-serve [OPTS] MODULE:OBJECT
+
+Standard options:
+
+    --help
+        Show this information.
+
+    --call
+        Call the given object to get the WSGI application.
+
+    --host=ADDR
+        Hostname or IP address on which to listen, default is '0.0.0.0',
+        which means "all IP addresses on this host".
+
+        Note: May not be used together with --listen
+
+    --port=PORT
+        TCP port on which to listen, default is '8080'
+
+        Note: May not be used together with --listen
+
+    --listen=ip:port
+        Tell waitress to listen on an ip port combination.
+
+        Example:
+
+            --listen=127.0.0.1:8080
+            --listen=[::1]:8080
+            --listen=*:8080
+
+        This option may be used multiple times to listen on multiple sockets.
+        A wildcard for the hostname is also supported and will bind to both
+        IPv4/IPv6 depending on whether they are enabled or disabled.
+
+    --[no-]ipv4
+        Toggle on/off IPv4 support.
+
+        Example:
+
+            --no-ipv4
+
+        This will disable IPv4 socket support. This affects wildcard matching
+        when generating the list of sockets.
+
+    --[no-]ipv6
+        Toggle on/off IPv6 support.
+
+        Example:
+
+            --no-ipv6
+
+        This will turn on IPv6 socket support. This affects wildcard matching
+        when generating a list of sockets.
+
+    --unix-socket=PATH
+        Path of Unix socket. If a socket path is specified, a Unix domain
+        socket is made instead of the usual inet domain socket.
+
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+        Not available on Windows.
+
+    --unix-socket-perms=PERMS
+        Octal permissions to use for the Unix domain socket, default is
+        '600'.
+
+    --url-scheme=STR
+        Default wsgi.url_scheme value, default is 'http'.
+
+   --url-prefix=STR
+        The ``SCRIPT_NAME`` WSGI environment value.  Setting this to anything
+        except the empty string will cause the WSGI ``SCRIPT_NAME`` value to be
+        the value passed minus any trailing slashes you add, and it will cause
+        the ``PATH_INFO`` of any request which is prefixed with this value to
+        be stripped of the prefix.  Default is the empty string.
+
+    --ident=STR
+        Server identity used in the 'Server' header in responses. Default
+        is 'waitress'.
+
+Tuning options:
+
+    --threads=INT
+        Number of threads used to process application logic, default is 4.
+
+    --backlog=INT
+        Connection backlog for the server. Default is 1024.
+
+    --recv-bytes=INT
+        Number of bytes to request when calling socket.recv(). Default is
+        8192.
+
+    --send-bytes=INT
+        Number of bytes to send to socket.send(). Default is 18000.
+        Multiples of 9000 should avoid partly-filled TCP packets.
+
+    --outbuf-overflow=INT
+        A temporary file should be created if the pending output is larger
+        than this. Default is 1048576 (1MB).
+
+    --outbuf-high-watermark=INT
+        The app_iter will pause when pending output is larger than this value
+        and will resume once enough data is written to the socket to fall below
+        this threshold. Default is 16777216 (16MB).
+
+    --inbuf-overflow=INT
+        A temporary file should be created if the pending input is larger
+        than this. Default is 524288 (512KB).
+
+    --connection-limit=INT
+        Stop creating new channels if too many are already active.
+        Default is 100.
+
+    --cleanup-interval=INT
+        Minimum seconds between cleaning up inactive channels. Default
+        is 30. See '--channel-timeout'.
+
+    --channel-timeout=INT
+        Maximum number of seconds to leave inactive connections open.
+        Default is 120. 'Inactive' is defined as 'has received no data
+        from the client and has sent no data to the client'.
+
+    --[no-]log-socket-errors
+        Toggle whether premature client disconnect tracebacks ought to be
+        logged. On by default.
+
+    --max-request-header-size=INT
+        Maximum size of all request headers combined. Default is 262144
+        (256KB).
+
+    --max-request-body-size=INT
+        Maximum size of request body. Default is 1073741824 (1GB).
+
+    --[no-]expose-tracebacks
+        Toggle whether to expose tracebacks of unhandled exceptions to the
+        client. Off by default.
+
+    --asyncore-loop-timeout=INT
+        The timeout value in seconds passed to asyncore.loop(). Default is 1.
+
+    --asyncore-use-poll
+        The use_poll argument passed to ``asyncore.loop()``. Helps overcome
+        open file descriptors limit. Default is False.
+
+    --channel-request-lookahead=INT
+        Allows channels to stay readable and buffer more requests up to the
+        given maximum even if a request is already being processed. This allows
+        detecting if a client closed the connection while its request is being
+        processed. Default is 0.
+
+
+
+
+
+
+
+
+
+**********************
+Windows PowerShell transcript start
+Start time: 20211029042342
+Username: Mercury\Merc
+RunAs User: Mercury\Merc
+Configuration Name: 
+Machine: MERCURY (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\GIT\DAT250\Win11Server.ps1'
+Process ID: 18160
+PSVersion: 5.1.22000.282
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.282
+BuildVersion: 10.0.22000.282
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is log.txt
+**********************
+Windows PowerShell transcript start
+Start time: 20211029042558
+Username: Mercury\Merc
+RunAs User: Mercury\Merc
+Configuration Name: 
+Machine: MERCURY (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\GIT\DAT250\Win11Server.ps1'
+Process ID: 14484
+PSVersion: 5.1.22000.282
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.282
+BuildVersion: 10.0.22000.282
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is log.txt
+**********************
+Windows PowerShell transcript start
+Start time: 20211029042857
+Username: Mercury\Merc
+RunAs User: Mercury\Merc
+Configuration Name: 
+Machine: MERCURY (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\GIT\DAT250\Win11Server.ps1'
+Process ID: 17396
+PSVersion: 5.1.22000.282
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.282
+BuildVersion: 10.0.22000.282
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is log.txt
