@@ -68,8 +68,8 @@ def create_app(test_config=None):
     from . import booking
     app.register_blueprint(booking.bp)
     app.add_url_rule('/', endpoint='index')
-
-    app.run()
+    cwd = os.getcwd()
+    app.run(ssl_context=(cwd+'\cert.pem', cwd+'\key.pem'))
 
     return app
        
