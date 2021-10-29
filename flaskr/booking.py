@@ -1,10 +1,8 @@
 from flask import current_app, request
 from sqlite3.dbapi2 import Date
 from flask import (
-    Blueprint, flash, g, redirect, render_template, request, url_for, jsonify, make_response, escape,session
+    Blueprint, flash, g, redirect, render_template, request, url_for, escape,session
 )
-from flask import sessions
-from flask.sessions import NullSession
 from werkzeug.exceptions import abort
 from werkzeug.security import check_password_hash, generate_password_hash
 
@@ -123,7 +121,9 @@ def cancel():
 
         flash('Booking canceled', "info")
         current_app.logger.warning('Room booking cancelled. USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
-        return redirect(url_for('auth.profile'))
+    else:
+        flash('Something went wrong', 'error')
+    return redirect(url_for('booking.profile'))
 
 
 @bp.route('/profile', methods=('GET', 'POST'))
@@ -141,10 +141,9 @@ def profile():
         date_string = None
 
     form = ChangePassword(request.form)
-    if request.method == 'POST' and form.validate():
+    if request.method == 'POST' and form.validate_on_submit():
         db = get_db()
         old_password=form.password.data
-        print(old_password)
         new_password=form.new_password.data
 
         if check_password_hash(g.user['password'], old_password):
@@ -153,14 +152,14 @@ def profile():
             (generate_password_hash(new_password),g.user['id']),)
             db.commit()
             flash('Your password has been updated.', 'info')
-            current_app.logger.info('Password updated. (auth/profile.html) USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
+            current_app.logger.info('Password updated. (booking/profile.html) USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
 
         else:
             flash('Original password is invalid.', 'error')
-            current_app.logger.info('Original password invalid input. (auth/profile.html) USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
+            current_app.logger.info('Original password invalid input. (booking/profile.html) USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
 
-    current_app.logger.info('Profile page opened. (auth/profile.html) USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
-    return render_template('auth/profile.html', booking=booking, date=date_string, form=form)    
+    current_app.logger.info('Profile page opened. (booking/profile.html) USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
+    return render_template('booking/profile.html', booking=booking, date=date_string, form=form)    
 
 
 def get_rooms(date, time):

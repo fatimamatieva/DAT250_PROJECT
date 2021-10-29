@@ -28,7 +28,7 @@ def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_mapping(
-        SECRET_KEY='dev',
+        SECRET_KEY='d5c500689d78aa18776a4b203f1428fc46d47b3e74caf37fb6beb89d9d4a1bc4',
         DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
     )
 
@@ -72,4 +72,3 @@ def create_app(test_config=None):
     app.run(host='0.0.0.0', port=5000, ssl_context=(cwd+'\cert.pem', cwd+'\key.pem'))
 
     return app
-       
