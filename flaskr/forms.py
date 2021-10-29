@@ -14,7 +14,7 @@ class RegistrationForm(FlaskForm):
         validators.DataRequired(message="Password is required"),
         validators.EqualTo('confirm_password', message="Passwords must match"),
         validators.Regexp(
-            "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$",
+             "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d\w\W]{8,}$",
             message="Password must have minimum eight characters, at least one uppercase letter, one lowercase letter and one number"
         )
 
@@ -53,7 +53,7 @@ class ChangePassword(FlaskForm):
         validators.DataRequired(message="New Password is required"),
         validators.EqualTo('confirm_new_password', message="Passwords must match"),
         validators.Regexp(
-            "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$",
+             "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d\w\W]{8,}$",
             message="Password must have minimum eight characters, at least one uppercase letter, one lowercase letter and one number"
         )
     
