@@ -98,7 +98,7 @@ def confirm(room_id):
 
             flash(f'Room {escape(room_number)} is already booked', "error") 
             current_app.logger.warning('Room already booked. USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
-
+        session.pop('booking', None)  
         return redirect(url_for("index"))
     current_app.logger.info('Booking confirm page opened. (booking/confirm.html) USER: ' + g.user['username'] + ' IP: ' + str(request.environ['REMOTE_ADDR']))
     return render_template('booking/confirm.html', data=booking_data)

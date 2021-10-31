@@ -5,7 +5,7 @@ from logging.config import dictConfig
 from flask_wtf.csrf import CSRFProtect
 from flask import Flask
 from flask_talisman import Talisman
-
+from datetime import timedelta
 
 def create_app(test_config=None):
     # configure logging
@@ -29,6 +29,8 @@ def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_mapping(
         SECRET_KEY='d5c500689d78aa18776a4b203f1428fc46d47b3e74caf37fb6beb89d9d4a1bc4',
+        WTF_CSRF_SECRET_KEY='155c076d61cf82778ececfcca6efbd38a845f66cd323798a2d06d9801ad9c5cb',
+        PERMANENT_SESSION_LIFETIME = timedelta(days=1),
         DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
     )
 
