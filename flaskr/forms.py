@@ -6,8 +6,8 @@ from flaskr.db import get_db
 class RegistrationForm(FlaskForm):
     email = StringField('Email', [
         validators.DataRequired(message="Email is required"), 
-        validators.Email(), 
-        validators.Regexp('.*(@uis\.no)$', message="Invalid email. Use your student email")
+        validators.Email(message="Invalid email, or alredy in use."), 
+        validators.Regexp('.*(@uis\.no)$', message="Invalid email, or alredy in use.")
     ])
 
     password = PasswordField('Password', [
@@ -31,13 +31,13 @@ class RegistrationForm(FlaskForm):
             'SELECT * FROM user WHERE username = ?', (email.data,)
         ).fetchone()
         if user:
-            raise validators.ValidationError('Email is already registered.')
+            raise validators.ValidationError('Invalid email, or alredy in use.')
 
 
 class LoginForm(FlaskForm):
     email = StringField('Email', [
         validators.DataRequired(message="Email is required"), 
-        validators.Email(message="Incorrect username or password."), 
+        validators.Email(message="Incorrect username or password."),
         validators.Regexp('.*(@uis\.no)$', message="Incorrect username or password.")
     ])
 

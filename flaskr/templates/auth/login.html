@@ -6,8 +6,7 @@
     <div class="error form">
         {% for field, errors in form.errors.items() %}
             <div class="error-message">
-                
-                {{ ', '.join(errors) }}
+                {{ errors[0]}}
             </div>
         {% endfor %}
     </div>
